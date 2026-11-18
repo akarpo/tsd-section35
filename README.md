@@ -8,6 +8,9 @@ $140 million literacy grant of 2023–24 (22 of Oakland County's 28 local distri
 Section 35 dollar Troy has received since 2016–17, explains the new $1 million Section 35d
 Orton-Gillingham grant, and asks the district questions.
 
+**Picking this up in a new session? Start with [`HANDOFF.md`](HANDOFF.md)**: current state, open
+items, and the mistakes not to repeat.
+
 ## Layout
 
 | Path | What it is |
@@ -24,7 +27,10 @@ Orton-Gillingham grant, and asks the district questions.
 | `sources/nces/` | NCES fall 2022 enrollment by grade (Troy, and all Michigan districts for the method check). |
 | `sources/troy/`, `sources/hfa/` | Troy board documents; House Fiscal Agency FY2025-26 summary. |
 | `tools/build_data.py` | Builds the CSV and the page's data block from `sources/`. It re-checks every Oakland district's 35j line against the PDF pages and checks the per-pupil method against NCES; it fails if either check fails. Run `python -I tools/build_data.py` (needs PyMuPDF). |
-| `tools/share-card.html` | Source of the share image (open in Chrome at 1200×630 and screenshot). |
+| `tools/share-card.html` | Source of the share image. Render it with `python -I tools/qa.py --card public/assets/<new-name>.png`. |
+| `tools/qa.py` | Renders the page at 1280/390 px, light and dark, into `qa-out/` (git-ignored) and checks overflow, console errors, anchors and heading order. `--live` checks the live site, its 404 page, share image and analytics; `--links` requests every external link. |
+| `tools/cloudflare.py` | Cloudflare Pages status (`status`, `check`) and the one-time setup (`create`, `domain`). Reads credentials from the file named by `CF_CRED_FILE`; never prints them. |
+| `HANDOFF.md` | Where things stand and how to pick the work back up. |
 | `docs/FIGURES.md` | Every figure on the page, with its source document and page. |
 | `docs/FINDINGS.md` | The research notes behind the page, including what was searched and not found. |
 
@@ -37,8 +43,8 @@ Orton-Gillingham grant, and asks the district questions.
 - Estimates are ours and stay labeled ("our estimate", "about").
 - "Troy didn't apply" is an inference from MDE's wording, not a documented fact. Keep it labeled
   that way unless the district or a FOIA response says otherwise.
-- After any edit, render at 1280 px and 390 px, light and dark, and check for overflow and heading
-  order.
+- After any edit, run `python -I tools/qa.py` (1280 px and 390 px, light and dark) and look at the
+  screenshots; the script catches overflow and heading order.
 
 ## When the numbers will change
 
@@ -54,4 +60,6 @@ Orton-Gillingham grant, and asks the district questions.
 
 Cloudflare Pages project `tsd-section35`, Git-connected to `akarpo/tsd-section35` (`main`), custom
 domain `tsd-section35.karpowitsch.org` (proxied CNAME to the project's `pages.dev` host). A push to
-`main` deploys. Never run `wrangler pages deploy`.
+`main` deploys. Never run `wrangler pages deploy`. After a push,
+`python -I tools/cloudflare.py status` shows whether the build succeeded and
+`python -I tools/qa.py --live` checks the result.
