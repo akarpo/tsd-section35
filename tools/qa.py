@@ -12,15 +12,22 @@ anchors and heading-level skips, not label collisions or bad wording.
 import argparse, html, pathlib, re, sys, urllib.error, urllib.parse, urllib.request
 from html.parser import HTMLParser
 
+for _p in ("/Users/Alex/Library/Python/3.9/lib/python/site-packages",):   # user-site Playwright under python -I
+    if pathlib.Path(_p).is_dir() and _p not in sys.path:
+        sys.path.append(_p)
+
 SITE = "https://tsd-section35.karpowitsch.org/"
-SECTIONS = ["findings", "oakland", "troy", "og"]          # also screenshotted on their own
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-PAGE = ROOT / "public" / "index.html"
+# (name, file, live path, sections also screenshotted on their own)
+PAGES = [("index", ROOT / "public" / "index.html", "", ["findings", "oakland", "troy", "og"]),
+         ("history", ROOT / "public" / "history.html", "history", ["years", "timeline", "35a-time", "35m", "troy"])]
+PAGE = PAGES[0][1]
+MIN_TEXT_PX = 12.5   # owner's floor for any on-screen text
 OUT = ROOT / "qa-out"
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36"
 # Hosts that refuse scripted requests; listed as "check in a browser", not failed.
 SKIP_HOSTS = {"www.sec.gov": "SEC blocks scripted requests that lack a contact User-Agent"}
-VIEWS = [("desk-light", 1280, "light"), ("desk-dark", 1280, "dark"), ("phone-light", 390, "light"), ("phone-dark", 390, "dark")]
+VIEWS = [("desk-light", 1280, "light"), ("desk-dark", 1280, "dark"), ("phone-light", 390, "light"), ("phone-dark", 390, "dark"), ("phone360-light", 360, "light")]
 
 
 class Struct(HTMLParser):
@@ -72,10 +79,10 @@ def fetch(url, method="GET"):
         return 0, type(e).__name__
 
 
-def render(url, live, problems):
+def render(url, live, problems, name="index", sections=()):
     from playwright.sync_api import sync_playwright
     OUT.mkdir(exist_ok=True)
-    tag = "live-" if live else ""
+    tag = ("live-" if live else "") + ("" if name == "index" else name + "-")
     with sync_playwright() as p:
         try:
             b = p.chromium.launch()
@@ -86,15 +93,22 @@ def render(url, live, problems):
             pg.on("console", lambda m, n=name: problems.append(f"{n} console {m.type}: {m.text}") if m.type in ("error", "warning") else None)
             pg.on("pageerror", lambda e, n=name: problems.append(f"{n} page error: {e}"))
             pg.goto(url, wait_until="networkidle" if live else "load"); pg.wait_for_timeout(800)
-            pg.add_style_tag(content="header.top{position:static !important}")
+            pg.add_style_tag(content="header.top,.tl-head{position:static !important}")
             sw, cw = pg.evaluate("[document.documentElement.scrollWidth, document.documentElement.clientWidth]")
-            if sw > cw: problems.append(f"{name}: horizontal overflow {sw}>{cw}")
+            if sw > cw: problems.append(f"{tag}{name}: horizontal overflow {sw}>{cw}")
+            small = pg.evaluate("""(min) => { const out = []; const w = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+                while (w.nextNode()) { const t = w.currentNode; if (!t.textContent.trim()) continue; const el = t.parentElement;
+                  const cs = getComputedStyle(el); if (cs.display === 'none' || cs.visibility === 'hidden' || el.closest('.sr,.tip,[hidden],[aria-hidden="true"]')) continue;
+                  const r = el.getBoundingClientRect(); if (!r.width || !r.height) continue;
+                  const px = parseFloat(cs.fontSize); if (px < min) out.push(px + 'px ' + el.tagName + '.' + el.className + ': ' + t.textContent.trim().slice(0, 30)); }
+                return out.slice(0, 8); }""", MIN_TEXT_PX)
+            for x in small: problems.append(f"{tag}{name}: text under {MIN_TEXT_PX}px: {x}")
             if live and name == "desk-light" and not pg.evaluate("!!document.querySelector('script[src*=cloudflareinsights]')"):
                 problems.append("live: Cloudflare Web Analytics beacon missing (check the CSP in public/_headers)")
             pg.screenshot(path=str(OUT / f"{tag}{name}.png"), full_page=True)
-            for sec in SECTIONS:
-                if pg.locator(f"#{sec}").count():
-                    pg.locator(f"#{sec}").screenshot(path=str(OUT / f"{tag}{name}-{sec}.png"))
+            for sec in sections:
+                if pg.locator(f"[id=\"{sec}\"]").count():
+                    pg.locator(f"[id=\"{sec}\"]").screenshot(path=str(OUT / f"{tag}{name}-{sec}.png"))
                 else:
                     problems.append(f"section #{sec} not found")
             pg.close()
@@ -114,6 +128,11 @@ def card(out):
     print("share card written:", out, "- give a changed card a NEW file name and update og:image/twitter:image")
 
 
+def main_pages(a, problems):
+    for name, f, path, secs in PAGES:
+        render(SITE + path if a.live else f.as_uri(), a.live, problems, name, secs)
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--live", action="store_true")
@@ -123,7 +142,10 @@ def main():
     if a.card:
         return card(pathlib.Path(a.card).resolve())
     problems = []
-    links = structure(PAGE.read_text(encoding="utf-8"), problems)
+    links = []
+    for name, f, path, secs in PAGES:
+        print(f"[{name}]", end=" ")
+        links += [u for u in structure(f.read_text(encoding="utf-8"), problems) if u not in links]
     if a.live:
         s, ct = fetch(SITE); print("live page:", s)
         if s != 200: problems.append(f"live page returned {s}")
@@ -132,7 +154,11 @@ def main():
         for m in re.finditer(r'property="og:image" content="([^"]+)"', PAGE.read_text(encoding="utf-8")):
             s, ct = fetch(m.group(1)); print("share image:", s, ct)
             if s != 200: problems.append(f"share image {m.group(1)} returned {s}")
-    render(SITE if a.live else PAGE.as_uri(), a.live, problems)
+    if a.live:
+        for name, f, path, secs in PAGES[1:]:
+            st, _ = fetch(SITE + path); print(f"live /{path}:", st)
+            if st != 200: problems.append(f"live /{path} returned {st}")
+    main_pages(a, problems)
     if a.links:
         for u in links:
             host = urllib.parse.urlsplit(u).hostname or ""

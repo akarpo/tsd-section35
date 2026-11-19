@@ -84,7 +84,7 @@
   .nav a.link{color:var(--ink-2);text-decoration:none;font-size:14.5px;font-weight:600}
   .nav a.link:hover{color:var(--ink)}
   .iconbtn{background:none;border:1px solid var(--border-2);color:var(--ink-2);border-radius:8px;width:36px;height:32px;cursor:pointer;font-size:15px}
-  @media(max-width:820px){ .nav .links a.link{display:none} }
+  @media(max-width:820px){ .nav .links a.link{display:none} .nav .links a.link.keep{display:inline} }
 
   .hero{padding:56px 0 40px}
   .hero h1{font-size:clamp(32px,5.6vw,54px);font-weight:800;margin:.35em 0 .3em;letter-spacing:-.02em;max-width:22ch}
@@ -179,6 +179,7 @@
     <a class="link" href="#og">Orton-Gillingham</a>
     <a class="link" href="#questions">Questions</a>
     <a class="link" href="#sources">Sources</a>
+    <a class="link keep" href="/history">All grants</a>
   </nav>
   <button class="iconbtn" id="themeBtn" type="button" aria-label="Switch light or dark theme" title="Light / dark">&#9680;</button>
 </div></header>
@@ -193,7 +194,7 @@
     <div class="kpi"><div class="n">&asymp;$1.6M</div><div class="l">Troy's share at the state's equal rate of $311.08 per pre-K&ndash;5 pupil (our estimate)</div></div>
     <div class="kpi"><div class="n">22 of 28</div><div class="l">Oakland County local districts that received it, including Birmingham, Rochester and Novi</div></div>
   </div>
-  <p class="stamp">Independent analysis &middot; last updated Nov. 18, 2026 &middot; every figure links to a public source</p>
+  <p class="stamp">Independent analysis &middot; last updated Nov. 19, 2026 &middot; every figure links to a public source</p>
 </div>
 
 <!-- ============ FINDINGS ============ -->
@@ -272,11 +273,12 @@
 <section id="troy"><div class="wrap">
   <div class="eyebrow">Troy School District</div>
   <h2 class="sec">Every Section 35 dollar Troy received</h2>
-  <p class="lead prose">Through 2024&ndash;25, Troy's only regular Section 35 money was a small yearly grant for extra reading instruction, Section 35a(5). The state ended that grant in 2025&ndash;26. Troy's one large award came from Section 35m, a literacy-materials grant, which it is using for new reading programs.</p>
+  <p class="lead prose">From 2015&ndash;16 through 2024&ndash;25, Troy's only regular Section 35 money was a small yearly grant for extra reading instruction, Section 35a(5) (35a(6) in its first year). The state ended that grant in 2025&ndash;26. Troy's one large award came from Section 35m, a literacy-materials grant, which it is using for new reading programs.</p>
   <div class="tablewrap"><table class="fit">
     <thead><tr><th>State fiscal year</th><th class="l">Section</th><th>Amount</th></tr></thead>
     <tbody>
-      <tr><td>2016&ndash;17</td><td class="l">35a(5) extra instructional time</td><td>$135,630</td></tr>
+      <tr><td>2015&ndash;16</td><td class="l">35a(6) extra instructional time</td><td>$146,190</td></tr>
+      <tr><td>2016&ndash;17</td><td class="l">35a(5)</td><td>$135,630</td></tr>
       <tr><td>2017&ndash;18</td><td class="l">35a(5)</td><td>$183,750</td></tr>
       <tr><td>2018&ndash;19</td><td class="l">35a(5)</td><td>$181,460</td></tr>
       <tr><td>2019&ndash;20</td><td class="l">35a(5); 35a(9) summer reading</td><td>$178,485; $25,630</td></tr>
@@ -295,6 +297,8 @@
     <div class="callout"><h3>Where the 35m money is going</h3>
       <p class="small" style="margin:0">A May 13, 2026 memo from Troy's Director of Teaching &amp; Learning to the business office recommends buying &ldquo;Collaborative Literacy: Being a Reader at scale for all elementary students&rdquo; for <strong>$1,093,710</strong>, which &ldquo;will come from our 35m grant allocation,&rdquo; plus small UFLI pilots in K&ndash;2 (about $10,000). MDE's lists record Troy's 35m choice as &ldquo;UFLI Foundations, 1st Edition.&rdquo;</p></div>
   </div>
+  <div class="callout"><h3>Every Section 35 grant since 2015&ndash;16</h3>
+    <p class="small" style="margin:0">Section 35 has held 27 different grants in 12 state budgets, from literacy coaches and dyslexia training to Section 35j and 35m. <a href="/history">See each one</a>: what it paid for, who got it, how much each year, and what Troy received.</p></div>
   <div class="callout"><h3>Troy's 2025&ndash;26 35m award is still unpaid</h3>
     <p class="small" style="margin:0">MDE recommended <strong>$1,173,876</strong> for Troy in 2025&ndash;26. On the state's Nov. 20, 2026 payment, other Oakland districts received theirs (Birmingham: $720,411), but Troy's report has no 35m line. MDE pays 35m after a district's budget in NexSys is approved, so the most likely explanation is a pending budget. We don't know.</p></div>
 </div></section>
@@ -345,7 +349,7 @@
   <h2 class="sec">Every document used</h2>
   <p class="prose small muted">Copies of each source, the data script and a figure-by-figure source log are in the <a href="https://github.com/akarpo/tsd-section35">public repository</a>.</p>
   <ul class="src prose">
-    <li>Michigan Department of Education, <a href="https://mdoe.state.mi.us/samspublic/Home/StatusArchiveReport">State Aid Financial Status Reports</a> (archive): statewide final reports for <a href="https://mdoe.state.mi.us/samspublic/Home/DownloadPDF?fileName=ALL2411.pdf&amp;report=statusarchive">2023&ndash;24</a> (Troy p. 1124), <a href="https://mdoe.state.mi.us/samspublic/Home/DownloadPDF?fileName=ALL2511.pdf&amp;report=statusarchive">2024&ndash;25</a> (p. 1127) and <a href="https://mdoe.state.mi.us/samspublic/Home/DownloadPDF?fileName=ALL2611.pdf&amp;report=statusarchive">2025&ndash;26</a> (pp. 1128&ndash;1129), and earlier years; <a href="https://mdoe.state.mi.us/samspublic/Home/DownloadPDF?fileName=ISD63November-2026.pdf&amp;report=status">Oakland ISD report dated Nov. 20, 2026</a> (Troy pp. 32&ndash;33)</li>
+    <li>Michigan Department of Education, <a href="https://mdoe.state.mi.us/samspublic/Home/StatusArchiveReport">State Aid Financial Status Reports</a> (archive): statewide final reports for <a href="https://mdoe.state.mi.us/samspublic/Home/DownloadPDF?fileName=ALL1611.pdf&amp;report=statusarchive">2015&ndash;16</a> (Troy p. 1028), <a href="https://mdoe.state.mi.us/samspublic/Home/DownloadPDF?fileName=ALL2411.pdf&amp;report=statusarchive">2023&ndash;24</a> (Troy p. 1124), <a href="https://mdoe.state.mi.us/samspublic/Home/DownloadPDF?fileName=ALL2511.pdf&amp;report=statusarchive">2024&ndash;25</a> (p. 1127) and <a href="https://mdoe.state.mi.us/samspublic/Home/DownloadPDF?fileName=ALL2611.pdf&amp;report=statusarchive">2025&ndash;26</a> (pp. 1128&ndash;1129), and earlier years; <a href="https://mdoe.state.mi.us/samspublic/Home/DownloadPDF?fileName=ISD63November-2026.pdf&amp;report=status">Oakland ISD report dated Nov. 20, 2026</a> (Troy pp. 32&ndash;33)</li>
     <li><a href="https://legislature.mi.gov/documents/2023-2024/publicact/pdf/2023-PA-0103.pdf">Public Act 103 of 2023</a>, Sec. 35j (pp. 80&ndash;81); <a href="https://legislature.mi.gov/documents/mcl/pdf/mcl-388-1635j.pdf">MCL 388.1635j</a> (repealed by 2025 PA 15); <a href="https://legislature.mi.gov/documents/2025-2026/publicact/pdf/2026-PA-0025.pdf">Public Act 25 of 2026</a>, Sec. 35d (p. 68)</li>
     <li>MDE, <a href="https://www.michigan.gov/mde/-/media/Project/Websites/mde/Memos/2024/01/Section-35j-Memo.pdf">Section 35j memo, Jan. 25, 2024</a>; <a href="https://www.michigan.gov/mde/-/media/Project/Websites/mde/reports/35a-Legislative-Memo-and-Report-2024-25.pdf">Section 35 report to the Legislature, Dec. 23, 2025</a></li>
     <li>MDE, Section 35m: <a href="https://www.michigan.gov/mde/-/media/Project/Websites/mde/Links/2025/08/24-25-Section-35m-Grantees_Programs_Amounts.pdf">2024&ndash;25 grantees</a> (Troy p. 17), <a href="https://www.michigan.gov/mde/-/media/Project/Websites/mde/Literacy/Literacy-Grants/FY-26-Section-35m-Grantees.xlsx">2025&ndash;26 grantees</a></li>
@@ -353,6 +357,7 @@
     <li><a href="https://legislature.mi.gov/documents/2023-2024/publicact/pdf/2024-PA-0146.pdf">Public Act 146 of 2024</a> (dyslexia screening); House Fiscal Agency, <a href="https://www.house.mi.gov/hfa/PDF/Summaries/25s166_SchAid_Enacted.pdf">FY2025&ndash;26 school aid summary</a> (35a(5) eliminated)</li>
     <li>NCES Common Core of Data, fall 2022 enrollment by grade, Troy School District (LEA 2634260), via the <a href="https://educationdata.urban.org/documentation/school-districts.html">Urban Institute Education Data Portal</a></li>
     <li>Troy School District: <a href="https://media.karpowitsch.org/troysd-boarddocs/2026-01-20_Organizational%20and%20Regular%20Meeting%20of%20the%20Board%20of%20Education%207_00%20PM/Budget%20Presentation%201-20-26.pdf">Jan. 20, 2026 budget presentation</a>; <a href="https://media.karpowitsch.org/troysd-boarddocs/2026-05-19_Regular%20Meeting%20of%20the%20Board%20of%20Education%207_00%20PM/Ltr%20of%20Rec%20-%20Teaching%20%26%20Learning%20-%20K-8%20Literacy%20Pilots.pdf">K&ndash;8 literacy pilots memo, May 13, 2026</a>; <a href="https://media.karpowitsch.org/troysd-boarddocs/2025-06-03_Board%20of%20Education%20Workshop%206_00%20P.M/PA%20146%20Legislative%20Overview.pdf">PA 146 overview, June 3, 2025</a>; and the rest of the <a href="https://tsd-boarddocs.karpowitsch.org">board document archive</a>, where we found no mention of 35j</li>
+    <li>On this site: <a href="/history">every Section 35 grant, 2015&ndash;16 to 2026&ndash;27</a>, with the budget acts, House Fiscal Agency summaries and payment reports behind each figure</li>
     <li>Related: <a href="https://tsd-mpsers.karpowitsch.org">what MPSERS pension payoff would mean for Troy</a></li>
   </ul>
 </div></section>
@@ -360,7 +365,7 @@
 
 <footer><div class="wrap">
   <div class="disc"><strong>Independent analysis.</strong> Prepared by a Michigan resident as civic commentary on public records. Not affiliated with, authorized by, or paid for by the Michigan Department of Education, Troy School District, Oakland Schools, any party or campaign. Facts come from the public sources listed above; conclusions are opinion. Estimates are ours and are labeled as such.</div>
-  <div>tsd-section35.karpowitsch.org &middot; last updated Nov. 18, 2026</div>
+  <div>tsd-section35.karpowitsch.org &middot; last updated Nov. 19, 2026</div>
 </div></footer>
 
 <div class="tip" id="tip" role="status" aria-live="polite"></div>

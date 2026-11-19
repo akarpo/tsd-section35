@@ -1,0 +1,2162 @@
+{
+  "_about": "Every Section 35 grant in Michigan's school aid budgets, 2015-16 (state FY2016) to 2026-27 (FY2027). Hand-entered from the acts and House Fiscal Agency summaries; tools/build_history.py checks every quote 'q' against the cited source file and fails if it isn't there or if the amount isn't in the quote. 'fy' is the state fiscal year (FY2016 = Oct. 1, 2015 - Sept. 30, 2016). 'amt' is the final amount for that year after any supplemental, cut or veto; 'orig' is the amount first enacted when it differs. 'pay' maps state-aid payment-report lines (sources/parsed) to the grant: [program-year, report code]. Prose fields are plain text with *bold* only.",
+  "docs": {
+    "PA2015-85": {
+      "file": "sources/statute/acts/2015-PA-0085-pp37-40-Sec35.pdf",
+      "first": 37,
+      "label": "2015 PA 85",
+      "url": "https://legislature.mi.gov/documents/2015-2016/publicact/pdf/2015-PA-0085.pdf"
+    },
+    "PA2016-249": {
+      "file": "sources/statute/acts/2016-PA-0249-pp43-46-Sec35.pdf",
+      "first": 43,
+      "label": "2016 PA 249",
+      "url": "https://legislature.mi.gov/documents/2015-2016/publicact/pdf/2016-PA-0249.pdf"
+    },
+    "PA2017-108": {
+      "file": "sources/statute/acts/2017-PA-0108-pp42-45-Sec35.pdf",
+      "first": 42,
+      "label": "2017 PA 108",
+      "url": "https://legislature.mi.gov/documents/2017-2018/publicact/pdf/2017-PA-0108.pdf"
+    },
+    "PA2017-143": {
+      "file": "sources/statute/acts/2017-PA-0143-pp14-16-Sec35.pdf",
+      "first": 14,
+      "label": "2017 PA 143",
+      "url": "https://legislature.mi.gov/documents/2017-2018/publicact/pdf/2017-PA-0143.pdf"
+    },
+    "PA2018-265": {
+      "file": "sources/statute/acts/2018-PA-0265-pp42-45-Sec35.pdf",
+      "first": 42,
+      "label": "2018 PA 265",
+      "url": "https://legislature.mi.gov/documents/2017-2018/publicact/pdf/2018-PA-0265.pdf"
+    },
+    "PA2018-586": {
+      "file": "sources/statute/acts/2018-PA-0586-pp23-26-Sec35.pdf",
+      "first": 23,
+      "label": "2018 PA 586",
+      "url": "https://legislature.mi.gov/documents/2017-2018/publicact/pdf/2018-PA-0586.pdf"
+    },
+    "PA2020-165": {
+      "file": "sources/statute/acts/2020-PA-0165-pp47-51-Sec35.pdf",
+      "first": 47,
+      "label": "2020 PA 165",
+      "url": "https://legislature.mi.gov/documents/2019-2020/publicact/pdf/2020-PA-0165.pdf"
+    },
+    "PA2021-48": {
+      "file": "sources/statute/acts/2021-PA-0048-pp52-59-Sec35.pdf",
+      "first": 52,
+      "label": "2021 PA 48",
+      "url": "https://legislature.mi.gov/documents/2021-2022/publicact/pdf/2021-PA-0048.pdf"
+    },
+    "PA2022-144": {
+      "file": "sources/statute/acts/2022-PA-0144-pp64-70-Sec35.pdf",
+      "first": 64,
+      "label": "2022 PA 144",
+      "url": "https://legislature.mi.gov/documents/2021-2022/publicact/pdf/2022-PA-0144.pdf"
+    },
+    "PA2023-103": {
+      "file": "sources/statute/acts/2023-PA-0103-pp75-82-Sec35.pdf",
+      "first": 75,
+      "label": "2023 PA 103",
+      "url": "https://legislature.mi.gov/documents/2023-2024/publicact/pdf/2023-PA-0103.pdf"
+    },
+    "PA2024-120": {
+      "file": "sources/statute/acts/2024-PA-0120-pp58-66-Sec35.pdf",
+      "first": 58,
+      "label": "2024 PA 120",
+      "url": "https://legislature.mi.gov/documents/2023-2024/publicact/pdf/2024-PA-0120.pdf"
+    },
+    "PA2026-25": {
+      "file": "sources/statute/acts/2026-PA-0025-pp65-72-Sec35.pdf",
+      "first": 65,
+      "label": "2026 PA 25",
+      "url": "https://legislature.mi.gov/documents/2025-2026/publicact/pdf/2026-PA-0025.pdf"
+    },
+    "HFA16": {
+      "file": "sources/hfa/line-items/SchAid_lineFY16-p12.pdf",
+      "first": 12,
+      "label": "HFA FY2015-16 line-item summary",
+      "url": "https://www.house.mi.gov/HFA/Archives/PDF/LineItemSummaries/line16_SchAid.pdf"
+    },
+    "HFA17": {
+      "file": "sources/hfa/line-items/SchAid_lineFY17-pp13-14.pdf",
+      "first": 13,
+      "label": "HFA FY2016-17 line-item summary",
+      "url": "https://www.house.mi.gov/HFA/Archives/PDF/LineItemSummaries/line17_SchAid.pdf"
+    },
+    "HFA18": {
+      "file": "sources/hfa/line-items/SchAid_lineFY18-p15.pdf",
+      "first": 15,
+      "label": "HFA FY2017-18 line-item summary",
+      "url": "https://www.house.mi.gov/HFA/Archives/PDF/LineItemSummaries/line18_SchAid.pdf"
+    },
+    "HFA19": {
+      "file": "sources/hfa/line-items/SchAid_lineFY19-p15.pdf",
+      "first": 15,
+      "label": "HFA FY2018-19 line-item summary",
+      "url": "https://www.house.mi.gov/HFA/Archives/PDF/LineItemSummaries/line19_SchAid.pdf"
+    },
+    "HFA20": {
+      "file": "sources/hfa/line-items/SchAid_lineFY20-pp15-16.pdf",
+      "first": 15,
+      "label": "HFA FY2019-20 line-item summary",
+      "url": "https://www.house.mi.gov/hfa/PDF/LineItemSummaries/SchAid_lineFY20.pdf"
+    },
+    "HFA21": {
+      "file": "sources/hfa/line-items/SchAid_lineFY21-pp15-16.pdf",
+      "first": 15,
+      "label": "HFA FY2020-21 line-item summary",
+      "url": "https://www.house.mi.gov/hfa/PDF/LineItemSummaries/SchAid_lineFY21.pdf"
+    },
+    "HFA22": {
+      "file": "sources/hfa/line-items/SchAid_lineFY22-pp16-17.pdf",
+      "first": 16,
+      "label": "HFA FY2021-22 line-item summary",
+      "url": "https://www.house.mi.gov/hfa/PDF/LineItemSummaries/SchAid_lineFY22.pdf"
+    },
+    "HFA23": {
+      "file": "sources/hfa/line-items/SchAid_lineFY23-pp17-18.pdf",
+      "first": 17,
+      "label": "HFA FY2022-23 line-item summary",
+      "url": "https://www.house.mi.gov/hfa/PDF/LineItemSummaries/SchAid_lineFY23.pdf"
+    },
+    "HFA24": {
+      "file": "sources/hfa/line-items/SchAid_lineFY24-pp20-21.pdf",
+      "first": 20,
+      "label": "HFA FY2023-24 line-item summary",
+      "url": "https://www.house.mi.gov/hfa/PDF/LineItemSummaries/SchAid_lineFY24.pdf"
+    },
+    "HFA25": {
+      "file": "sources/hfa/line-items/SchAid_lineFY25-p17.pdf",
+      "first": 17,
+      "label": "HFA FY2024-25 line-item summary",
+      "url": "https://www.house.mi.gov/hfa/PDF/LineItemSummaries/SchAid_lineFY25.pdf"
+    },
+    "HFA26": {
+      "file": "sources/hfa/line-items/SchAid_lineFY26-p14.pdf",
+      "first": 14,
+      "label": "HFA FY2025-26 line-item summary",
+      "url": "https://www.house.mi.gov/hfa/PDF/LineItemSummaries/SchAid_lineFY26.pdf"
+    },
+    "HFA27": {
+      "file": "sources/hfa/line-items/SchAid_lineFY27-p14.pdf",
+      "first": 14,
+      "label": "HFA FY2026-27 line-item summary",
+      "url": "https://www.house.mi.gov/hfa/PDF/LineItemSummaries/SchAid_lineFY27.pdf"
+    },
+    "HFA26sum": {
+      "file": "sources/hfa/HFA_25s166_SchAid_Enacted.pdf",
+      "first": 1,
+      "label": "HFA FY2025-26 enacted budget summary",
+      "url": "https://www.house.mi.gov/hfa/PDF/Summaries/25s166_SchAid_Enacted.pdf"
+    },
+    "RPT": {
+      "file": "sources/mde/mde_35a-Legislative-Memo-and-Report-2024-25.pdf",
+      "first": 1,
+      "label": "MDE Section 35 report to the Legislature, Dec. 23, 2025",
+      "url": "https://www.michigan.gov/mde/-/media/Project/Websites/mde/reports/35a-Legislative-Memo-and-Report-2024-25.pdf"
+    },
+    "MCL35e": {
+      "file": "sources/statute/mcl/mcl-388-1635e.pdf",
+      "first": 1,
+      "label": "MCL 388.1635e (history note)",
+      "url": "https://legislature.mi.gov/documents/mcl/pdf/mcl-388-1635e.pdf"
+    },
+    "MCL35": {
+      "file": "sources/statute/mcl/mcl-388-1635.pdf",
+      "first": 1,
+      "label": "MCL 388.1635 (history note)",
+      "url": "https://legislature.mi.gov/documents/mcl/pdf/mcl-388-1635.pdf"
+    },
+    "MCL35d": {
+      "file": "sources/statute/mcl-388-1635d.pdf",
+      "first": 1,
+      "label": "MCL 388.1635d (history note)",
+      "url": "https://legislature.mi.gov/documents/mcl/pdf/mcl-388-1635d.pdf"
+    },
+    "BULLETIN": {
+      "file": "sources/mde/govdelivery_MDE_literacy_update_2026-11-17.html",
+      "first": 1,
+      "label": "MDE literacy bulletin, Nov. 17, 2026",
+      "url": "https://content.govdelivery.com/accounts/MIMDE/bulletins/43317bf"
+    }
+  },
+  "groups": [
+    {
+      "id": "core",
+      "title": "The early literacy initiative (Sections 35 and 35a)",
+      "intro": "Section 35a began in the 2015-16 budget as a package of early literacy programs built around Michigan's third-grade reading goal. Its pieces have changed almost every year; each is described below."
+    },
+    {
+      "id": "dyslexia",
+      "title": "Dyslexia and multisensory reading (35b, 35c, 35d)",
+      "intro": "Small grants, $250,000 to $1 million a year, for training in multisensory, structured reading methods such as Orton-Gillingham."
+    },
+    {
+      "id": "big",
+      "title": "The large grants to districts (35j, 35m, 35n, 35p)",
+      "intro": "Since 2023-24 the Legislature has used new Section 35 letters for large, mostly one-time grants awarded by application."
+    },
+    {
+      "id": "named",
+      "title": "Grants to named organizations and places (35e, 35f, 35g, 35h, 35i, 35k, 35l)",
+      "intro": "Short-lived lines that name a recipient, or describe one so narrowly that only one fits. Most lasted one or two years."
+    },
+    {
+      "id": "nomoney",
+      "title": "No money attached (35q)",
+      "intro": ""
+    }
+  ],
+  "programs": [
+    {
+      "id": "s35-admin",
+      "group": "core",
+      "cites": "Sec. 35",
+      "letters": [
+        "35"
+      ],
+      "name": "Running the early literacy initiative",
+      "chart": "other",
+      "summary": "General-fund money for the Michigan Department of Education's costs of running the new Section 35a programs.",
+      "detail": [
+        "Section 35 set the goal for everything in 35a: programs \"to ensure children are reading at grade level by the end of grade 3,\" so that Michigan would be \"in the top 10 most improved states in grade 4 reading proficiency by the 2019 National Assessment of Educational Progress (NAEP)\" and in the top 10 overall by 2025. Its money paid the department's implementation costs; in 2015-16, $100,000 of it was set aside to evaluate the parent-education pilots.",
+        "The 2017-18 payment report shows $150,000 of it paid to Wexford-Missaukee ISD. The 2018-19 budget (2018 PA 265) repealed Section 35 and moved the goal language into Section 35a."
+      ],
+      "troy": "Not a grant to districts.",
+      "years": [
+        {
+          "fy": 2016,
+          "amt": 1000000,
+          "doc": "PA2015-85",
+          "q": "$1,000,000.00 for 2015-2016 for implementation costs associated with programs funded under section 35a"
+        },
+        {
+          "fy": 2017,
+          "amt": 1000000,
+          "doc": "PA2016-249",
+          "q": "$1,000,000.00 for 2016-2017 for implementation costs associated with programs funded under section 35a"
+        },
+        {
+          "fy": 2018,
+          "amt": 1000000,
+          "doc": "PA2017-108",
+          "q": "$1,000,000.00 for 2017-2018 for implementation costs associated with programs funded under section 35a"
+        }
+      ],
+      "checks": [
+        {
+          "doc": "PA2015-85",
+          "q": "an amount not to exceed $100,000.00 for the purpose of performing an evaluation of the pilot programs under section 35a(2)"
+        },
+        {
+          "doc": "PA2018-265",
+          "q": "Programs funded under this section are intended to ensure that this state will be in the top 10 most improved states in grade 4 reading proficiency"
+        },
+        {
+          "doc": "MCL35",
+          "q": "Repealed. 2018, Act 265"
+        }
+      ],
+      "pay": [
+        [
+          2018,
+          "35"
+        ]
+      ],
+      "facts": [
+        {
+          "t": "who",
+          "pyr": 2018,
+          "code": "35",
+          "name": "Wexford-Missaukee ISD",
+          "eq": 150000
+        }
+      ]
+    },
+    {
+      "id": "35a-time",
+      "group": "core",
+      "cites": "Sec. 35a(6), then 35a(5)",
+      "letters": [
+        "35a"
+      ],
+      "name": "Extra reading time for pupils who screen as behind",
+      "chart": "time",
+      "summary": "Troy's one regular Section 35 grant: money for extra reading instruction for young pupils whom screening shows need help, split among districts that qualified by their first-grade enrollment.",
+      "detail": [
+        "Districts could add instructional time \"before, during, and after regular school hours or as part of a year-round balanced school calendar\" for pupils in grades K-3 identified by department-approved screening and diagnostic tools (pre-K to 3 by 2020-21, and pre-K to 5 from 2023-24). To qualify, a district had to show it ran a multi-tiered system of supports, used approved diagnostic tools, taught the five building blocks of reading (phonics, phonemic awareness, fluency, vocabulary, and comprehension), and had trained its K-3 teachers to read the diagnostic data.",
+        "The money was divided by each qualifying district's full-time-equivalent first graders; HFA put the 2017-18 rate at $210 per first grader. From 2017-18 a district could spend up to 5% of its grant on teacher training and up to 5% on screening tools, which replaced the separate grants for those. The first year's amount was cut from $17.5 million to $13.6 million in June 2016. The 2025-26 budget ended the grant: \"Eliminates $19.9 million SAF.\""
+      ],
+      "troy": "Troy received it every year from 2015-16 through 2024-25, $135,630 to $183,750 a year.",
+      "years": [
+        {
+          "fy": 2016,
+          "amt": 13600000,
+          "orig": 17500000,
+          "status": "cut",
+          "doc": "PA2016-249",
+          "q": "an amount not to exceed $13,600,000.00 for 2015-2016 and an amount not to exceed $17,500,000.00 for 2016-2017 to districts that provide additional instructional time",
+          "origdoc": "PA2015-85",
+          "origq": "$17,500,000.00 for 2015-2016 to districts that provide additional instructional time",
+          "note": "Cut from $17.5 million in June 2016 (2016 PA 249)."
+        },
+        {
+          "fy": 2017,
+          "amt": 17500000,
+          "doc": "PA2016-249",
+          "q": "an amount not to exceed $17,500,000.00 for 2016-2017 to districts that provide additional instructional time"
+        },
+        {
+          "fy": 2018,
+          "amt": 20900000,
+          "doc": "PA2017-108",
+          "q": "$20,900,000.00 for 2017-2018 to districts that provide additional instructional time"
+        },
+        {
+          "fy": 2019,
+          "amt": 19900000,
+          "doc": "PA2018-586",
+          "q": "$19,900,000.00 for 2018-2019 to districts that provide additional instructional time"
+        },
+        {
+          "fy": 2020,
+          "amt": 19900000,
+          "doc": "HFA20",
+          "q": "$19.9 million for added instructional time"
+        },
+        {
+          "fy": 2021,
+          "amt": 19900000,
+          "doc": "PA2020-165",
+          "q": "$19,900,000.00 for 2020-2021 to districts that provide additional instructional time"
+        },
+        {
+          "fy": 2022,
+          "amt": 19900000,
+          "doc": "PA2021-48",
+          "q": "$19,900,000.00 for 2021-2022 to districts that provide additional instructional time"
+        },
+        {
+          "fy": 2023,
+          "amt": 19900000,
+          "doc": "PA2022-144",
+          "q": "$19,900,000.00 for 2022-2023 to districts that provide additional instructional time"
+        },
+        {
+          "fy": 2024,
+          "amt": 19900000,
+          "doc": "PA2023-103",
+          "q": "$19,900,000.00 for 2023-2024 to districts that provide additional instructional time"
+        },
+        {
+          "fy": 2025,
+          "amt": 19900000,
+          "doc": "PA2024-120",
+          "q": "$19,900,000.00 for 2024-2025 to districts that provide additional instructional time"
+        }
+      ],
+      "checks": [
+        {
+          "doc": "HFA26sum",
+          "q": "Eliminates $19.9 million SAF"
+        },
+        {
+          "doc": "HFA18",
+          "q": "$210 per 1st grade FTE"
+        },
+        {
+          "doc": "HFA18",
+          "q": "Caps funding that may be used for professional development or diagnostic tools at 5% each"
+        },
+        {
+          "doc": "PA2016-249",
+          "q": "Additional instructional time may be provided before, during, and after regular school hours or as part of a year-round balanced school calendar"
+        },
+        {
+          "doc": "PA2016-249",
+          "q": "phonics, phonemic awareness, fluency, vocabulary, and comprehension"
+        },
+        {
+          "doc": "PA2020-165",
+          "q": "those pupils in grades pre-K to 3"
+        },
+        {
+          "doc": "PA2023-103",
+          "q": "to districts that provide additional instructional time to those pupils in grades pre-K to 5"
+        }
+      ],
+      "pay": [
+        [
+          2016,
+          "35a(6)"
+        ],
+        [
+          2017,
+          "35a(5)"
+        ],
+        [
+          2018,
+          "35a(5)"
+        ],
+        [
+          2019,
+          "35a(5)"
+        ],
+        [
+          2020,
+          "35a(5)"
+        ],
+        [
+          2021,
+          "35a(5)"
+        ],
+        [
+          2022,
+          "35a(5)"
+        ],
+        [
+          2023,
+          "35a(5)"
+        ],
+        [
+          2024,
+          "35a(5)"
+        ],
+        [
+          2025,
+          "35a(5)"
+        ]
+      ],
+      "facts": [
+        {
+          "t": "troy_range",
+          "min": 135630,
+          "max": 183750,
+          "years": [
+            2016,
+            2025
+          ]
+        }
+      ]
+    },
+    {
+      "id": "35a-coaches",
+      "group": "core",
+      "cites": "Sec. 35a(5), then 35a(4), now 35a(2)",
+      "letters": [
+        "35a"
+      ],
+      "name": "Early literacy coaches at intermediate school districts",
+      "chart": "coaches",
+      "summary": "Grants to ISDs to employ early literacy coaches who help teachers of young readers. The largest line that recurs every year, from $3 million in 2015-16 to $52.5 million in 2026-27.",
+      "detail": [
+        "Each ISD is funded for a base number of coaches, and the rest is divided by each ISD's share of the state's K-3 pupils who qualify for free or reduced-price lunch. In 2015-16 the grant was up to $37,500 per coach and an ISD had to match at least half the cost; by 2023-24 it was up to $125,000 per coach, with two coaches per ISD funded first. Coaches work with teachers of pre-K to grade 5 (K-3 at first).",
+        "Oakland Schools, Troy's ISD, has received a share every year; its payments are in the table."
+      ],
+      "troy": "Paid to ISDs, not to Troy. See Oakland Schools' amounts above.",
+      "years": [
+        {
+          "fy": 2016,
+          "amt": 3000000,
+          "doc": "PA2016-249",
+          "q": "$3,000,000.00 each fiscal year for 2015-2016 and for 2016-2017 for the purpose of providing early literacy coaches"
+        },
+        {
+          "fy": 2017,
+          "amt": 3000000,
+          "doc": "PA2016-249",
+          "q": "$3,000,000.00 each fiscal year for 2015-2016 and for 2016-2017 for the purpose of providing early literacy coaches"
+        },
+        {
+          "fy": 2018,
+          "amt": 6000000,
+          "doc": "PA2017-108",
+          "q": "$6,000,000.00 for 2017-2018 for the purpose of providing early literacy coaches"
+        },
+        {
+          "fy": 2019,
+          "amt": 7000000,
+          "doc": "PA2018-586",
+          "q": "$7,000,000.00 for 2018-2019 for the purpose of providing early literacy coaches"
+        },
+        {
+          "fy": 2020,
+          "amt": 31500000,
+          "orig": 21000000,
+          "status": "raised",
+          "doc": "HFA20",
+          "q": "2019 PA 162 increased funding for literacy coaches to $31.5 million",
+          "origdoc": "HFA20",
+          "origq": "Includes $21.0 million for literacy coaches",
+          "note": "Raised from $21.0 million by a December 2019 supplemental (2019 PA 162)."
+        },
+        {
+          "fy": 2021,
+          "amt": 31500000,
+          "doc": "PA2020-165",
+          "q": "$31,500,000.00 for 2020-2021 for the purpose of providing early literacy coaches"
+        },
+        {
+          "fy": 2022,
+          "amt": 31500000,
+          "doc": "PA2021-48",
+          "q": "$31,500,000.00 for 2021-2022 for the purpose of providing early literacy coaches"
+        },
+        {
+          "fy": 2023,
+          "amt": 31500000,
+          "doc": "PA2022-144",
+          "q": "$31,500,000.00 for 2022-2023 for the purpose of providing early literacy coaches"
+        },
+        {
+          "fy": 2024,
+          "amt": 42000000,
+          "doc": "PA2023-103",
+          "q": "$42,000,000.00 for 2023-2024 for the purpose of providing early literacy coaches"
+        },
+        {
+          "fy": 2025,
+          "amt": 42000000,
+          "doc": "PA2024-120",
+          "q": "$42,000,000.00 for 2024-2025 for the purpose of providing early literacy coaches"
+        },
+        {
+          "fy": 2026,
+          "amt": 42000000,
+          "doc": "HFA26",
+          "q": "Includes $42.0 million for literacy coaches"
+        },
+        {
+          "fy": 2027,
+          "amt": 52500000,
+          "doc": "PA2026-25",
+          "q": "$52,500,000.00 for 2026-2027 for the purpose of providing literacy coaches"
+        }
+      ],
+      "checks": [
+        {
+          "doc": "PA2015-85",
+          "q": "An intermediate district must provide matching funds for at least 50% of the cost of the literacy coach"
+        },
+        {
+          "doc": "PA2015-85",
+          "q": "not to exceed $37,500.00"
+        },
+        {
+          "doc": "PA2023-103",
+          "q": "grant funding to support the cost of 2 early literacy coaches in an equal amount per early literacy coach, not to exceed $125,000.00"
+        },
+        {
+          "doc": "PA2023-103",
+          "q": "who meet the income eligibility standards for the federal free and reduced-price lunch programs"
+        },
+        {
+          "doc": "PA2026-25",
+          "q": "for pupils in grades pre-K to 5"
+        }
+      ],
+      "pay": [
+        [
+          2016,
+          "35a(5)"
+        ],
+        [
+          2017,
+          "35a(4)"
+        ],
+        [
+          2018,
+          "35a(4)"
+        ],
+        [
+          2019,
+          "35a(4)"
+        ],
+        [
+          2020,
+          "35a(4)"
+        ],
+        [
+          2021,
+          "35a(4)"
+        ],
+        [
+          2022,
+          "35a(4)"
+        ],
+        [
+          2023,
+          "35a(4)"
+        ],
+        [
+          2024,
+          "35a(4)"
+        ],
+        [
+          2025,
+          "35a(4)"
+        ],
+        [
+          2026,
+          "35a(4)"
+        ]
+      ]
+    },
+    {
+      "id": "35a-letrs",
+      "group": "core",
+      "cites": "Sec. 35a(10), now 35a(4)",
+      "letters": [
+        "35a"
+      ],
+      "name": "LETRS reading training for teachers",
+      "chart": "other",
+      "summary": "Free professional learning in the science of reading for teachers, through a provider the department approves. It grows to $75 million in 2026-27.",
+      "detail": [
+        "Enrollment was voluntary and first-come, first-served, opened first to pre-K, kindergarten and first-grade teachers, then grades 2 and 3, and from 2022-23 to other elementary teachers and some special-education staff. MDE delivers LETRS (Language Essentials for Teachers of Reading and Spelling) with Lexia Learning and reports having started training more than 12,000 educators.",
+        "In 2025-26 the $10 million was paid to Gogebic-Ontonagon ISD. For 2026-27 it rises to $75 million, $50 million of it from the educator fellowship public provider fund, for an ISD chosen by the department."
+      ],
+      "troy": "Training, not money for districts. These records don't show whether Troy teachers took part.",
+      "years": [
+        {
+          "fy": 2022,
+          "amt": 4000000,
+          "doc": "PA2021-48",
+          "q": "$4,000,000.00 for 2021-2022 for professional learning described in subsection (11)"
+        },
+        {
+          "fy": 2023,
+          "amt": 10000000,
+          "doc": "PA2022-144",
+          "q": "$10,000,000.00 for 2022-2023 only for the provision of professional learning"
+        },
+        {
+          "fy": 2024,
+          "amt": 10000000,
+          "doc": "PA2023-103",
+          "q": "$10,000,000.00 for 2023-2024 only for the provision of professional learning"
+        },
+        {
+          "fy": 2025,
+          "amt": 10000000,
+          "doc": "PA2024-120",
+          "q": "$10,000,000.00 for 2024-2025 only for the provision of professional learning"
+        },
+        {
+          "fy": 2026,
+          "amt": 10000000,
+          "doc": "HFA26",
+          "q": "$10.0 million in one-time funding for professional learning"
+        },
+        {
+          "fy": 2027,
+          "amt": 75000000,
+          "doc": "PA2026-25",
+          "q": "$25,000,000.00, and from the educator fellowship public provider fund money allocated under subsection (1), there is allocated an amount not to exceed $50,000,000.00 for 2026-2027 only",
+          "parts": [
+            25000000,
+            50000000
+          ]
+        }
+      ],
+      "checks": [
+        {
+          "doc": "PA2021-48",
+          "q": "first to educators in pre-K, kindergarten, and grade 1 and then to educators in grade 2 and grade 3"
+        },
+        {
+          "doc": "PA2021-48",
+          "q": "on a first-come, first-served basis"
+        },
+        {
+          "doc": "PA2022-144",
+          "q": "then to additional elementary school educators and pre-K to grade 12 certificated special education personnel"
+        },
+        {
+          "doc": "RPT",
+          "q": "Language Essentials for Teachers of Reading and Spelling (LETRS)"
+        },
+        {
+          "doc": "RPT",
+          "q": "MDE and Lexia® Learning have started training over 12,000 educators"
+        },
+        {
+          "doc": "PA2026-25",
+          "q": "to an intermediate district identified by the department"
+        }
+      ],
+      "pay": [
+        [
+          2026,
+          "35a(10)"
+        ]
+      ],
+      "facts": [
+        {
+          "t": "who",
+          "pyr": 2026,
+          "code": "35a(10)",
+          "name": "Gogebic-Ontonagon ISD",
+          "eq": 10000000
+        }
+      ]
+    },
+    {
+      "id": "35a-essentials",
+      "group": "core",
+      "cites": "Sec. 35a(9), 35a(7), 35m(9), now 35o",
+      "letters": [
+        "35a",
+        "35m",
+        "35o"
+      ],
+      "name": "Literacy Essentials training (Gogebic-Ontonagon ISD)",
+      "chart": "other",
+      "summary": "Money to the ISD with the fewest pupils in the state, Gogebic-Ontonagon ISD, to train teachers and principals statewide in the Essential Instructional Practices in Literacy, working with the Michigan Association of Intermediate School Administrators.",
+      "detail": [
+        "The training uses the Essential Instructional Practices in Literacy written by the General Education Leadership Network (GELN). From 2020-21 the money also paid for regional lead literacy coaches and principals' literacy training, and from 2021-22 HFA describes it as literacy and math essentials. The governor's 2019 veto struck a separate $300,000 for principals' literacy training.",
+        "It began with $1 million added in December 2018 (2018 PA 586). It moved into Section 35m for 2025-26 ($4 million) and became its own Section 35o for 2026-27. The payment reports don't list the 2018-19 or 2019-20 money; from 2020-21 they show it paid to Gogebic-Ontonagon ISD."
+      ],
+      "troy": "Paid to one ISD to run statewide training.",
+      "years": [
+        {
+          "fy": 2019,
+          "amt": 1000000,
+          "doc": "PA2018-586",
+          "q": "$1,000,000.00 for 2018-2019 to an intermediate district in which the combined total number of pupils in membership of all of its constituent districts is the fewest among all intermediate districts"
+        },
+        {
+          "fy": 2020,
+          "amt": 1000000,
+          "doc": "HFA20",
+          "q": "$1.0 million for literacy essentials training"
+        },
+        {
+          "fy": 2021,
+          "amt": 4000000,
+          "doc": "PA2020-165",
+          "q": "$4,000,000.00 for 2020-2021 to an intermediate district in which the combined total number of pupils"
+        },
+        {
+          "fy": 2022,
+          "amt": 6000000,
+          "doc": "PA2021-48",
+          "q": "$6,000,000.00 for 2021-2022 to an intermediate district in which the combined total number of pupils"
+        },
+        {
+          "fy": 2023,
+          "amt": 6000000,
+          "doc": "PA2022-144",
+          "q": "$6,000,000.00 for 2022-2023 to an intermediate district in which the combined total number of pupils"
+        },
+        {
+          "fy": 2024,
+          "amt": 6000000,
+          "doc": "PA2023-103",
+          "q": "$6,000,000.00 for 2023-2024 to an intermediate district in which the combined total number of pupils"
+        },
+        {
+          "fy": 2025,
+          "amt": 6000000,
+          "doc": "PA2024-120",
+          "q": "$6,000,000.00 for 2024-2025 to an intermediate district in which the combined total number of pupils"
+        },
+        {
+          "fy": 2026,
+          "amt": 4000000,
+          "doc": "HFA26",
+          "q": "Allocates $4.0 million for literacy essentials training",
+          "note": "Inside Section 35m.",
+          "within": "35m"
+        },
+        {
+          "fy": 2027,
+          "amt": 6000000,
+          "doc": "PA2026-25",
+          "q": "$6,000,000.00 for 2026-2027 to an intermediate district in which the combined total number of pupils in membership of all of its constituent districts is the fewest",
+          "note": "New Section 35o."
+        }
+      ],
+      "checks": [
+        {
+          "doc": "RPT",
+          "q": "Essential Instructional Practices in Literacy created by the General Education Leadership Network (GELN)"
+        },
+        {
+          "doc": "RPT",
+          "q": "(Gogebic-Ontonagon ISD and Michigan Association for Intermediate School Administrators)"
+        },
+        {
+          "doc": "HFA27",
+          "q": "Provides funding for Gogebic-Ontonagon ISD"
+        },
+        {
+          "doc": "HFA21",
+          "q": "$4.0 million for literacy essentials training, regional lead literacy coaches, and principals literacy training"
+        },
+        {
+          "doc": "HFA22",
+          "q": "literacy and math essentials training"
+        },
+        {
+          "doc": "HFA20",
+          "q": "$300,000 for principals literacy training"
+        }
+      ],
+      "pay": [
+        [
+          2021,
+          "35a(7)"
+        ],
+        [
+          2022,
+          "35a(7)"
+        ],
+        [
+          2023,
+          "35a(7)"
+        ],
+        [
+          2024,
+          "35a(7)"
+        ],
+        [
+          2025,
+          "35a(7)"
+        ],
+        [
+          2026,
+          "35m(9)"
+        ]
+      ],
+      "facts": [
+        {
+          "t": "who",
+          "pyr": 2021,
+          "code": "35a(7)",
+          "name": "Gogebic-Ontonagon ISD"
+        },
+        {
+          "t": "who",
+          "pyr": 2022,
+          "code": "35a(7)",
+          "name": "Gogebic-Ontonagon ISD"
+        },
+        {
+          "t": "who",
+          "pyr": 2023,
+          "code": "35a(7)",
+          "name": "Gogebic-Ontonagon ISD"
+        },
+        {
+          "t": "who",
+          "pyr": 2024,
+          "code": "35a(7)",
+          "name": "Gogebic-Ontonagon ISD"
+        },
+        {
+          "t": "who",
+          "pyr": 2025,
+          "code": "35a(7)",
+          "name": "Gogebic-Ontonagon ISD"
+        },
+        {
+          "t": "who",
+          "pyr": 2026,
+          "code": "35m(9)",
+          "name": "Gogebic-Ontonagon ISD"
+        }
+      ]
+    },
+    {
+      "id": "35a-mec",
+      "group": "core",
+      "cites": "Sec. 35a(6), (7) or (8)",
+      "letters": [
+        "35a"
+      ],
+      "name": "Michigan Education Corps (Reading Corps)",
+      "chart": "other",
+      "summary": "A grant to the Michigan Education Corps, which HFA describes as \"a nonprofit working with districts to improve reading,\" for its PreK Reading Corps, K3 Reading Corps and Math Corps.",
+      "detail": [
+        "General-fund money every year from 2015-16 through 2023-24 except 2019-20, when the governor vetoed it. In 2024-25 it came from the school aid fund and was paid to an ISD that had to forward it to the Corps. The 2025-26 and 2026-27 budgets don't fund it."
+      ],
+      "troy": "Paid to a nonprofit, not to districts.",
+      "years": [
+        {
+          "fy": 2016,
+          "amt": 1000000,
+          "doc": "PA2015-85",
+          "q": "$1,000,000.00 for 2015-2016 to the Michigan Education Corps"
+        },
+        {
+          "fy": 2017,
+          "amt": 1000000,
+          "doc": "PA2016-249",
+          "q": "$1,000,000.00 each fiscal year for 2015-2016 and for 2016-2017 to the Michigan Education Corps"
+        },
+        {
+          "fy": 2018,
+          "amt": 2500000,
+          "doc": "PA2017-108",
+          "q": "$2,500,000.00 for 2017-2018 to the Michigan Education Corps"
+        },
+        {
+          "fy": 2019,
+          "amt": 3000000,
+          "orig": 2500000,
+          "status": "raised",
+          "doc": "PA2018-586",
+          "q": "$3,000,000.00 for 2018-2019 to the Michigan Education Corps",
+          "origdoc": "PA2018-265",
+          "origq": "$2,500,000.00 for 2018-2019 to the Michigan Education Corps",
+          "note": "Raised from $2.5 million in December 2018 (2018 PA 586)."
+        },
+        {
+          "fy": 2020,
+          "amt": 0,
+          "orig": 3000000,
+          "status": "vetoed",
+          "doc": "HFA20",
+          "q": "$3.0 million for Michigan Education Corps",
+          "note": "Vetoed by the governor."
+        },
+        {
+          "fy": 2021,
+          "amt": 2773000,
+          "doc": "PA2020-165",
+          "q": "$2,773,000.00 for 2020-2021 to the Michigan Education Corps"
+        },
+        {
+          "fy": 2022,
+          "amt": 3500000,
+          "doc": "PA2021-48",
+          "q": "$3,500,000.00 for 2021-2022 to the Michigan Education Corps"
+        },
+        {
+          "fy": 2023,
+          "amt": 5000000,
+          "doc": "PA2022-144",
+          "q": "$5,000,000.00 for 2022-2023 only to the Michigan Education Corps"
+        },
+        {
+          "fy": 2024,
+          "amt": 5000000,
+          "doc": "PA2023-103",
+          "q": "$5,000,000.00 for 2023-2024 only to the Michigan Education Corps"
+        },
+        {
+          "fy": 2025,
+          "amt": 5000000,
+          "doc": "PA2024-120",
+          "q": "$5,000,000.00 for 2024-2025 only to an intermediate district or a consortium of intermediate districts to partner with the Michigan Education Corps"
+        }
+      ],
+      "checks": [
+        {
+          "doc": "HFA16",
+          "q": "a nonprofit working with districts to improve reading"
+        },
+        {
+          "doc": "HFA20",
+          "q": "Governor partially vetoed $15.0 million for summer school reading program, $3.0 million for Michigan Education Corps"
+        },
+        {
+          "doc": "PA2024-120",
+          "q": "must forward the amount received under this subsection to the Michigan Education Corps"
+        }
+      ],
+      "pay": []
+    },
+    {
+      "id": "35a-summer",
+      "group": "core",
+      "cites": "Sec. 35a(9)",
+      "letters": [
+        "35a"
+      ],
+      "name": "Summer school reading program",
+      "chart": "other",
+      "summary": "A one-year summer reading program in 2019-20.",
+      "detail": [
+        "The Legislature passed $15 million; the governor vetoed it, and a December 2019 supplemental (2019 PA 162) restored $5 million. The payment report shows it split among 556 districts and ISDs."
+      ],
+      "troy": "Troy received $25,630.",
+      "years": [
+        {
+          "fy": 2020,
+          "amt": 5000000,
+          "orig": 15000000,
+          "status": "restored",
+          "doc": "HFA20",
+          "q": "partially restored summer school reading program at $5.0 million",
+          "origdoc": "HFA20",
+          "origq": "$15.0 million for a summer school reading program",
+          "note": "$15 million passed, vetoed, $5 million restored (2019 PA 162)."
+        }
+      ],
+      "checks": [],
+      "pay": [
+        [
+          2020,
+          "35a(9)"
+        ]
+      ],
+      "facts": [
+        {
+          "t": "n",
+          "pyr": 2020,
+          "code": "35a(9)",
+          "eq": 556
+        },
+        {
+          "t": "troy",
+          "pyr": 2020,
+          "code": "35a(9)",
+          "eq": 25629.84
+        }
+      ]
+    },
+    {
+      "id": "35a-pd",
+      "group": "core",
+      "cites": "Sec. 35a(3), then 35a(2)",
+      "letters": [
+        "35a"
+      ],
+      "name": "Teacher training grants",
+      "chart": "other",
+      "summary": "Two years of grants for training K-3 teachers in a department-approved, research-based literacy program, including how to use screening and diagnostic tools.",
+      "detail": [
+        "The department was also to work with Michigan Virtual University to put the training online for all K-3 educators. Both years the payment reports show the whole $950,000 going to Gogebic-Ontonagon ISD. From 2017-18, districts could instead spend up to 5% of their extra-reading-time grant on training."
+      ],
+      "troy": "Troy received none.",
+      "years": [
+        {
+          "fy": 2016,
+          "amt": 950000,
+          "doc": "PA2016-249",
+          "q": "$950,000.00 each fiscal year for 2015-2016 and for 2016-2017 for professional development purposes"
+        },
+        {
+          "fy": 2017,
+          "amt": 950000,
+          "doc": "PA2016-249",
+          "q": "$950,000.00 each fiscal year for 2015-2016 and for 2016-2017 for professional development purposes"
+        }
+      ],
+      "checks": [
+        {
+          "doc": "PA2016-249",
+          "q": "the department shall collaborate with the Michigan Virtual University to provide this training online to all educators of pupils in grades K to 3"
+        }
+      ],
+      "pay": [
+        [
+          2016,
+          "35a(3)"
+        ],
+        [
+          2017,
+          "35a(2)"
+        ]
+      ],
+      "facts": [
+        {
+          "t": "who",
+          "pyr": 2016,
+          "code": "35a(3)",
+          "name": "Gogebic-Ontonagon ISD",
+          "eq": 950000
+        },
+        {
+          "t": "who",
+          "pyr": 2017,
+          "code": "35a(2)",
+          "name": "Gogebic-Ontonagon ISD",
+          "eq": 950000
+        },
+        {
+          "t": "troy",
+          "pyr": 2016,
+          "code": "35a(3)",
+          "eq": 0
+        },
+        {
+          "t": "troy",
+          "pyr": 2017,
+          "code": "35a(2)",
+          "eq": 0
+        }
+      ]
+    },
+    {
+      "id": "35a-diag",
+      "group": "core",
+      "cites": "Sec. 35a(4), then 35a(3)",
+      "letters": [
+        "35a"
+      ],
+      "name": "Screening and diagnostic test grants",
+      "chart": "other",
+      "summary": "Two years of grants for districts to give department-approved early reading screening and diagnostic tests to K-3 pupils and to train teachers to use the results.",
+      "detail": [
+        "The payment reports show $950,000 a year to Gogebic-Ontonagon ISD and the rest to a few large districts: Detroit, Utica and Dearborn in 2015-16, plus Grand Rapids in 2016-17. From 2017-18, districts could spend up to 5% of their extra-reading-time grant on screening tools instead."
+      ],
+      "troy": "Troy received none.",
+      "years": [
+        {
+          "fy": 2016,
+          "amt": 1450000,
+          "doc": "PA2016-249",
+          "q": "$1,450,000.00 each fiscal year for 2015-2016 and for 2016-2017 for grants under this subsection"
+        },
+        {
+          "fy": 2017,
+          "amt": 1450000,
+          "doc": "PA2016-249",
+          "q": "$1,450,000.00 each fiscal year for 2015-2016 and for 2016-2017 for grants under this subsection"
+        }
+      ],
+      "checks": [
+        {
+          "doc": "PA2016-249",
+          "q": "to administer department-approved screening and diagnostic tools to monitor the development of early literacy and early reading skills of pupils in grades K to 3"
+        }
+      ],
+      "pay": [
+        [
+          2016,
+          "35a(4)"
+        ],
+        [
+          2017,
+          "35a(3)"
+        ]
+      ],
+      "facts": [
+        {
+          "t": "names",
+          "pyr": 2016,
+          "code": "35a(4)",
+          "names": [
+            "Gogebic-Ontonagon ISD",
+            "Utica Community Schools",
+            "Detroit City School District",
+            "Dearborn City School District"
+          ]
+        },
+        {
+          "t": "names",
+          "pyr": 2017,
+          "code": "35a(3)",
+          "names": [
+            "Gogebic-Ontonagon ISD",
+            "Utica Community Schools",
+            "Detroit Public Schools Community District",
+            "Dearborn City School District",
+            "Grand Rapids Public Schools"
+          ]
+        },
+        {
+          "t": "amount_of",
+          "pyr": 2016,
+          "code": "35a(4)",
+          "name": "Gogebic-Ontonagon ISD",
+          "eq": 950000
+        },
+        {
+          "t": "amount_of",
+          "pyr": 2017,
+          "code": "35a(3)",
+          "name": "Gogebic-Ontonagon ISD",
+          "eq": 950000
+        },
+        {
+          "t": "troy",
+          "pyr": 2016,
+          "code": "35a(4)",
+          "eq": 0
+        },
+        {
+          "t": "troy",
+          "pyr": 2017,
+          "code": "35a(3)",
+          "eq": 0
+        }
+      ]
+    },
+    {
+      "id": "35a-parent",
+      "group": "core",
+      "cites": "Sec. 35a(2)",
+      "letters": [
+        "35a"
+      ],
+      "name": "Parent-education pilots (cut before any money went out)",
+      "chart": "other",
+      "summary": "Competitive grants for parent-education programs for families with children under 4, so children would be ready for school.",
+      "detail": [
+        "ISDs were to apply on behalf of districts, for $120 per child under 4 or $130,000, whichever was less, with grants in every prosperity region. The June 2016 revision (2016 PA 249) cut 2015-16 Section 35a to $19.0 million and no longer lists the pilots, and the payment reports show none paid."
+      ],
+      "troy": "None paid to anyone.",
+      "years": [
+        {
+          "fy": 2016,
+          "amt": 0,
+          "orig": 1000000,
+          "status": "cut",
+          "doc": "PA2016-249",
+          "q": "there is allocated for 2015-2016 for the purposes of this section an amount not to exceed $19,000,000.00 from the state school aid fund",
+          "origdoc": "PA2015-85",
+          "origq": "$1,000,000.00 for 2015-2016 for the purpose of conducting parent education pilot programs for parents of children less than 4 years of age",
+          "note": "Budgeted at $1 million, then cut in June 2016."
+        }
+      ],
+      "checks": [
+        {
+          "doc": "PA2015-85",
+          "q": "multiplied by $120.00 per child or $130,000.00, whichever is less"
+        },
+        {
+          "doc": "PA2015-85",
+          "q": "The department shall ensure that grants are awarded in each prosperity region or subregion"
+        }
+      ],
+      "pay": []
+    },
+    {
+      "id": "35a-certtest",
+      "group": "core",
+      "cites": "Sec. 35a(8)",
+      "letters": [
+        "35a"
+      ],
+      "name": "Literacy test for new elementary teachers",
+      "chart": "other",
+      "summary": "General-fund money for the department to adopt \"a certification test to ensure that all newly certificated elementary teachers have the skills to deliver evidence-based literacy instruction.\"",
+      "detail": [],
+      "troy": "Not a grant to districts.",
+      "years": [
+        {
+          "fy": 2016,
+          "amt": 500000,
+          "doc": "PA2015-85",
+          "q": "$500,000.00 for 2015-2016 for the adoption of a certification test to ensure that all newly certificated elementary teachers have the skills to deliver evidence-based literacy instruction"
+        }
+      ],
+      "checks": [],
+      "pay": []
+    },
+    {
+      "id": "35a-slide",
+      "group": "core",
+      "cites": "Sec. 35a(8)",
+      "letters": [
+        "35a"
+      ],
+      "name": "Summer reading slide program",
+      "chart": "other",
+      "summary": "One grant to a program meant to slow the summer reading slide for pupils in grades K-4, especially from economically disadvantaged households.",
+      "detail": [
+        "The program had to deliver \"a bilingual, in-home, individualized summer reading program consisting of self-selected, independent reading level books to K to 4 pupils each week.\""
+      ],
+      "troy": "Paid to one program, not to districts.",
+      "years": [
+        {
+          "fy": 2019,
+          "amt": 500000,
+          "doc": "PA2018-586",
+          "q": "$500,000.00 for 2018-2019 for a grant to an eligible program that has a goal to slow or prevent the K to 4 summer reading slide"
+        }
+      ],
+      "checks": [
+        {
+          "doc": "PA2018-265",
+          "q": "deliver a bilingual, in-home, individualized summer reading program consisting of self-selected, independent reading level books to K to 4 pupils each week"
+        }
+      ],
+      "pay": []
+    },
+    {
+      "id": "35d",
+      "group": "dyslexia",
+      "cites": "Sec. 35d",
+      "letters": [
+        "35d"
+      ],
+      "name": "Orton-Gillingham dyslexia training",
+      "chart": "other",
+      "summary": "Grants to districts and ISDs to buy training from an eligible teacher-training program for children with dyslexia, which HFA calls Orton-Gillingham. The law has the department pay them first-come, first-served.",
+      "detail": [
+        "In 2020-21 the law described a one-on-one tutoring program; from 2021-22, a teacher-training program. MDE reports that in 2024-25 it paid the $1 million straight to the two approved providers, $400,000 to the Michigan Dyslexia Institute and $600,000 to the Institute for Multi-Sensory Education, to train district and ISD educators.",
+        "The 2025-26 budget dropped it and repealed the section (2025 PA 15). It returns for 2026-27 as $1 million in grants to districts and ISDs; MDE says the application opens in NexSys in spring 2027, first-come, first-served. (In the 2019-20 budget, the letter 35d was a $500,000 social-emotional learning pilot, which the governor vetoed.)"
+      ],
+      "troy": "Not paid through state aid, so these records don't show whether Troy staff were trained.",
+      "years": [
+        {
+          "fy": 2021,
+          "amt": 500000,
+          "doc": "PA2020-165",
+          "q": "$500,000.00 for the department to provide grants to districts and intermediate districts for the purchase of 1 or more components or trainings through an eligible 1-on-1 tutoring program for children with dyslexia"
+        },
+        {
+          "fy": 2022,
+          "amt": 1000000,
+          "doc": "PA2021-48",
+          "q": "for 2021-2022, there is allocated an amount not to exceed $1,000,000.00 for the department to provide grants to districts and intermediate districts"
+        },
+        {
+          "fy": 2023,
+          "amt": 1000000,
+          "doc": "PA2022-144",
+          "q": "for 2022-2023 only, there is allocated an amount not to exceed $1,000,000.00 for the department to provide grants to districts and intermediate districts"
+        },
+        {
+          "fy": 2024,
+          "amt": 1000000,
+          "doc": "PA2023-103",
+          "q": "for 2023-2024 only, there is allocated an amount not to exceed $1,000,000.00 for the department to provide grants to districts and intermediate districts"
+        },
+        {
+          "fy": 2025,
+          "amt": 1000000,
+          "doc": "PA2024-120",
+          "q": "for 2024-2025 only, there is allocated an amount not to exceed $1,000,000.00 for the department to provide grants to districts and intermediate districts"
+        },
+        {
+          "fy": 2027,
+          "amt": 1000000,
+          "doc": "PA2026-25",
+          "q": "2027 only an amount not to exceed $1,000,000.00 for the department to provide grants to districts and intermediate districts"
+        }
+      ],
+      "checks": [
+        {
+          "doc": "PA2020-165",
+          "q": "The department shall make payments under this section on a first-come, first-served basis until funds are depleted"
+        },
+        {
+          "doc": "RPT",
+          "q": "Section 35d provided $400,000 to Michigan Dyslexia Institute (MDI) and $600,000 to the Institute for Multi-Sensory Education (IMSE)"
+        },
+        {
+          "doc": "MCL35d",
+          "q": "was repealed by Act 15 of 2025"
+        },
+        {
+          "doc": "HFA20",
+          "q": "Social-Emotional Learning Pilot"
+        },
+        {
+          "doc": "HFA21",
+          "q": "(Orton-Gillingham) for children with dyslexia"
+        },
+        {
+          "doc": "BULLETIN",
+          "q": "Districts will apply on a first-come, first-served basis until all funds are allocated"
+        }
+      ],
+      "pay": []
+    },
+    {
+      "id": "35b",
+      "group": "dyslexia",
+      "cites": "Sec. 35b",
+      "letters": [
+        "35b"
+      ],
+      "name": "Dyslexia center pilot (Children's Choice Initiative)",
+      "chart": "other",
+      "summary": "A $250,000 pilot to train staff and tutors in a multisensory, structured language method and add reading time for K-3 pupils with reading delays.",
+      "detail": [
+        "As first written for 2018-19, only a district with an accredited dyslexia center and between 7,000 and 8,000 pupils qualified. A December 2018 amendment (2018 PA 586) sent the money instead to the Children's Choice Initiative, which received it again in 2020-21 and 2021-22. The 2019-20 budget didn't fund it, and the 2022-23 budget repealed the section."
+      ],
+      "troy": "Paid to one organization.",
+      "years": [
+        {
+          "fy": 2019,
+          "amt": 250000,
+          "doc": "PA2018-586",
+          "q": "$250,000.00 for a grant to be distributed by the department to the Children's Choice Initiative"
+        },
+        {
+          "fy": 2021,
+          "amt": 250000,
+          "doc": "PA2020-165",
+          "q": "there is allocated for 2020-2021 an amount not to exceed $250,000.00 for a grant to be distributed by the department to the Children's Choice Initiative"
+        },
+        {
+          "fy": 2022,
+          "amt": 250000,
+          "doc": "PA2021-48",
+          "q": "there is allocated for 2021-2022 an amount not to exceed $250,000.00 for a grant to be distributed by the department to the Children's Choice Initiative"
+        }
+      ],
+      "checks": [
+        {
+          "doc": "PA2018-265",
+          "q": "The district has a pupil membership greater than 7,000 and less than 8,000"
+        }
+      ],
+      "pay": []
+    },
+    {
+      "id": "35c",
+      "group": "dyslexia",
+      "cites": "Sec. 35c",
+      "letters": [
+        "35c"
+      ],
+      "name": "Multisensory reading training pilot",
+      "chart": "other",
+      "summary": "$300,000 for a professional development program in multisensory structured reading instruction.",
+      "detail": [
+        "The governor vetoed it in 2019; the December 2019 supplemental (2019 PA 162) restored it in full. The payment report shows it paid to Livonia Public Schools. The section was repealed in 2020 (2020 PA 165)."
+      ],
+      "troy": "Paid to Livonia.",
+      "years": [
+        {
+          "fy": 2020,
+          "amt": 300000,
+          "status": "restored",
+          "doc": "HFA20",
+          "q": "2019 PA 162 fully restored $300,000 appropriation",
+          "note": "Vetoed, then restored (2019 PA 162)."
+        }
+      ],
+      "checks": [],
+      "pay": [
+        [
+          2020,
+          "35c"
+        ]
+      ],
+      "facts": [
+        {
+          "t": "who",
+          "pyr": 2020,
+          "code": "35c",
+          "name": "Livonia Public Schools School District",
+          "eq": 300000
+        }
+      ]
+    },
+    {
+      "id": "35j",
+      "group": "big",
+      "cites": "Sec. 35j",
+      "letters": [
+        "35j"
+      ],
+      "name": "Literacy training, curriculum and supports (the grant Troy missed)",
+      "chart": "35j",
+      "summary": "The one-time $140 million grant of 2023-24, paid at an equal $311.08 per pre-K-5 pupil to the 434 districts that applied, half in 2023-24 and half in 2024-25.",
+      "detail": [
+        "Districts had to apply in a single window (Jan. 26 to Feb. 23, 2024), screen their literacy practices, submit a plan, have every pre-K-5 teacher complete training, and post their curriculum and benchmark assessment. The section was repealed in October 2025 (2025 PA 15)."
+      ],
+      "troy": "Troy received none. Its equal share would have been about $1.6 million (our estimate). The details are on the main page.",
+      "years": [
+        {
+          "fy": 2024,
+          "amt": 140000000,
+          "doc": "PA2023-103",
+          "q": "$140,000,000.00 for payments to districts and intermediate districts to improve literacy instructional practices"
+        }
+      ],
+      "checks": [
+        {
+          "doc": "RPT",
+          "q": "434 LEAs applied for and received funding"
+        },
+        {
+          "doc": "RPT",
+          "q": "per-pupil allocation of $311.08"
+        }
+      ],
+      "pay": [
+        [
+          2024,
+          "35j"
+        ],
+        [
+          2025,
+          "35j"
+        ]
+      ],
+      "facts": [
+        {
+          "t": "troy",
+          "pyr": 2024,
+          "code": "35j",
+          "eq": 0
+        },
+        {
+          "t": "troy",
+          "pyr": 2025,
+          "code": "35j",
+          "eq": 0
+        },
+        {
+          "t": "n",
+          "pyr": 2024,
+          "code": "35j",
+          "block": "current",
+          "eq": 416
+        }
+      ],
+      "paynotes": {
+        "2024": "MDE counts 434 districts funded; the payment reports show 416 with a 35j line in 2023-24 and don't explain the difference.",
+        "2025": "The second half of the 2023-24 grant, paid to districts that met the year-two conditions."
+      }
+    },
+    {
+      "id": "35m",
+      "group": "big",
+      "cites": "Sec. 35m",
+      "letters": [
+        "35m"
+      ],
+      "name": "High-quality literacy materials",
+      "chart": "35m",
+      "summary": "Money for districts to buy reading curriculum, interventions or teacher training chosen from lists ranked by the state's Committee for Literacy Achievement.",
+      "detail": [
+        "The committee grades literacy series, professional development and tools by their likelihood of raising pupils' reading outcomes. Districts apply for one item from the lists, and the department pays what it determines a district needs to put that item in place. MDE reports 561 districts applied for and received 2024-25 money, which was paid in 2025-26.",
+        "The 2025-26 line ($70 million) also carried $4 million for Literacy Essentials and $1.6 million for the MiMTSS Technical Assistance Center (paid to Clinton County RESA). For 2026-27 it is $50 million, with applications in December 2026."
+      ],
+      "troy": "Troy received $1,120,928 on its 2024-25 award (UFLI Foundations), paid in 2025-26. Its 2025-26 award of $1,173,876 was still unpaid on Nov. 20, 2026.",
+      "years": [
+        {
+          "fy": 2025,
+          "amt": 87000000,
+          "doc": "PA2024-120",
+          "q": "$87,000,000.00 for the purposes described in this section, including payments to improve educational outcomes in literacy"
+        },
+        {
+          "fy": 2026,
+          "amt": 70000000,
+          "doc": "HFA26",
+          "q": "Section 35m - Literacy Supports 70,000,000",
+          "note": "Includes $4 million for Literacy Essentials (shown above) and $1.6 million for MiMTSS."
+        },
+        {
+          "fy": 2027,
+          "amt": 50000000,
+          "doc": "PA2026-25",
+          "q": "2026-2027 only an amount not to exceed $50,000,000.00 for the purposes described in this section, including payments to improve educational outcomes in literacy"
+        }
+      ],
+      "checks": [
+        {
+          "doc": "RPT",
+          "q": "561 districts applied for and received 35m funding"
+        },
+        {
+          "doc": "PA2026-25",
+          "q": "in an amount necessary, as determined by the department, for a district or intermediate district to implement the chosen literacy item"
+        },
+        {
+          "doc": "HFA26",
+          "q": "$1.6 million to expand implementation of the multi-tiered system of supports using the MiMTSS Technical Assistance Center"
+        },
+        {
+          "doc": "PA2026-25",
+          "q": "The committee shall assign grade tiers to the series based on the series' likelihood to increase student literacy outcomes"
+        }
+      ],
+      "pay": [
+        [
+          2025,
+          "35m"
+        ],
+        [
+          2025,
+          "35m(1)"
+        ],
+        [
+          2025,
+          "35m(10)"
+        ],
+        [
+          2026,
+          "35m(1)"
+        ],
+        [
+          2026,
+          "35m(10)"
+        ]
+      ],
+      "facts": [
+        {
+          "t": "troy",
+          "pyr": 2025,
+          "code": "35m",
+          "eq": 1120928
+        },
+        {
+          "t": "who",
+          "pyr": 2026,
+          "code": "35m(10)",
+          "block": "current",
+          "name": "Clinton County RESA",
+          "eq": 1600000
+        },
+        {
+          "t": "n_codes",
+          "pyr": 2025,
+          "codes": [
+            "35m",
+            "35m(1)"
+          ],
+          "eq": 468
+        }
+      ],
+      "count_codes": [
+        "35m",
+        "35m(1)"
+      ],
+      "paynotes": {
+        "2025": "Paid in 2025-26. MDE counts 561 districts funded for 2024-25; the Aug. 20, 2026 payment report shows 468 paid by then.",
+        "2026": "Awards for this year are being paid during 2026-27, so through the Aug. 20, 2026 report this row shows only the $1.6 million MiMTSS payment."
+      }
+    },
+    {
+      "id": "35n",
+      "group": "big",
+      "cites": "Sec. 35n",
+      "letters": [
+        "35n"
+      ],
+      "name": "READ innovation competition",
+      "chart": "other",
+      "summary": "A $10 million competition among districts for innovative literacy programs grounded in the science of reading.",
+      "detail": [
+        "Districts applied with a plan and a way to measure reading growth; those chosen got startup money, then competed in rounds on reported growth, with $500,000 for the winning district in each category. MDE received 115 applications and advanced 39, with startup money from $21,000 to $187,500. The money can be spent through Sept. 30, 2028.",
+        "Five Oakland County districts received startup money: Avondale, Birmingham, Hazel Park, Oak Park and West Bloomfield."
+      ],
+      "troy": "Troy received none.",
+      "years": [
+        {
+          "fy": 2025,
+          "amt": 10000000,
+          "doc": "PA2024-120",
+          "q": "$10,000,000.00 to the READ innovation competition"
+        }
+      ],
+      "checks": [
+        {
+          "doc": "RPT",
+          "q": "the department received 115 applications"
+        },
+        {
+          "doc": "RPT",
+          "q": "the department identified 39 applications to advance to the next phase of the competition, with funds requested and received by districts ranging from $21,000 to $187,500"
+        },
+        {
+          "doc": "PA2024-120",
+          "q": "is awarded, by the department, $500,000.00 to continue to support literacy initiatives"
+        },
+        {
+          "doc": "PA2024-120",
+          "q": "may be available for expenditure until September 30, 2028"
+        }
+      ],
+      "pay": [
+        [
+          2025,
+          "35n"
+        ]
+      ],
+      "facts": [
+        {
+          "t": "troy",
+          "pyr": 2025,
+          "code": "35n",
+          "eq": 0
+        },
+        {
+          "t": "oakland_names",
+          "pyr": 2025,
+          "code": "35n",
+          "names": [
+            "Avondale School District",
+            "Birmingham Public Schools",
+            "Hazel Park, School District of the City of",
+            "Oak Park, School District of the City of",
+            "West Bloomfield School District"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "35p",
+      "group": "big",
+      "cites": "Sec. 35p",
+      "letters": [
+        "35p"
+      ],
+      "name": "High-impact tutoring",
+      "chart": "other",
+      "summary": "One-time competitive grants to approved, evidence-based tutoring programs for in-person tutoring in partner districts.",
+      "detail": [
+        "Tutoring providers apply, naming the districts they will serve and a district or ISD to act as fiscal agent. If there isn't enough money for every applicant, the department must favor districts with the lowest M-STEP literacy proficiency. Up to $5 million is for a parent-driven tutoring pilot, and $600,000 goes to Clinton County RESA, with MAISA, for reporting and technical help. Awards are due by Jan. 15, 2027."
+      ],
+      "troy": "New this year; no awards yet.",
+      "years": [
+        {
+          "fy": 2027,
+          "amt": 50000000,
+          "doc": "PA2026-25",
+          "q": "$50,000,000.00 to implement high-impact tutoring programs through eligible tutoring partners in eligible districts"
+        }
+      ],
+      "checks": [
+        {
+          "doc": "PA2026-25",
+          "q": "the department must prioritize grant awards to districts with the lowest levels of literacy proficiency"
+        },
+        {
+          "doc": "PA2026-25",
+          "q": "there is allocated not more than $5,000,000.00 for a parent-driven tutoring pilot"
+        },
+        {
+          "doc": "PA2026-25",
+          "q": "there is allocated $600,000.00 to the Clinton County Regional Educational Service Agency"
+        },
+        {
+          "doc": "PA2026-25",
+          "q": "The department shall make award determinations and notifications by not later than January 15, 2027"
+        }
+      ],
+      "pay": []
+    },
+    {
+      "id": "35i",
+      "group": "named",
+      "cites": "Sec. 35i",
+      "letters": [
+        "35i"
+      ],
+      "name": "MiFamily Engagement Centers and an early literacy campaign",
+      "chart": "other",
+      "summary": "$14 million for ISDs to run 10 MiFamily Engagement Centers, plus $2 million for a statewide campaign on how parents can support early literacy from birth to grade 5.",
+      "detail": [
+        "The payment report shows $1.4 million to each of 10 ISDs for the centers (Oakland Schools isn't one) and the $2 million campaign paid to Berrien RESA. The center money can be spent through Sept. 30, 2027."
+      ],
+      "troy": "Paid to ISDs; Oakland Schools wasn't among them.",
+      "years": [
+        {
+          "fy": 2024,
+          "amt": 16000000,
+          "doc": "PA2023-103",
+          "q": "$14,000,000.00 for 2023-2024 only to intermediate districts or consortia of intermediate districts to administer 10 MiFamily Engagement Centers",
+          "q2": "$2,000,000.00 to implement a statewide campaign to share how parents can support early literacy for children from birth to grade 5",
+          "parts": [
+            14000000,
+            2000000
+          ]
+        }
+      ],
+      "checks": [
+        {
+          "doc": "PA2023-103",
+          "q": "may be available for expenditure until September 30, 2027"
+        }
+      ],
+      "pay": [
+        [
+          2024,
+          "35i(1)"
+        ],
+        [
+          2024,
+          "35i(5)"
+        ]
+      ],
+      "facts": [
+        {
+          "t": "n",
+          "pyr": 2024,
+          "code": "35i(1)",
+          "eq": 10
+        },
+        {
+          "t": "each",
+          "pyr": 2024,
+          "code": "35i(1)",
+          "eq": 1400000
+        },
+        {
+          "t": "notin",
+          "pyr": 2024,
+          "code": "35i(1)",
+          "district": "63000"
+        },
+        {
+          "t": "who",
+          "pyr": 2024,
+          "code": "35i(5)",
+          "name": "Berrien RESA",
+          "eq": 2000000
+        }
+      ]
+    },
+    {
+      "id": "35k",
+      "group": "named",
+      "cites": "Sec. 35k",
+      "letters": [
+        "35k"
+      ],
+      "name": "Detroit Parent Network",
+      "chart": "other",
+      "summary": "$3 million passed through a district or ISD to the Detroit Parent Network for parent training, support groups, early literacy and family education programs.",
+      "detail": [
+        "The network had to plan to serve at least 5,000 families, parents, caregivers and children in at least 10 counties. The payment report shows it paid to the Detroit Public Schools Community District."
+      ],
+      "troy": "Paid to Detroit for the network.",
+      "years": [
+        {
+          "fy": 2024,
+          "amt": 3000000,
+          "doc": "PA2023-103",
+          "q": "$3,000,000.00 to a district or intermediate district for the purposes of supporting the Detroit Parent Network"
+        }
+      ],
+      "checks": [
+        {
+          "doc": "PA2023-103",
+          "q": "at least 5,000 families, parents, caregivers, and children in at least 10 counties"
+        }
+      ],
+      "pay": [
+        [
+          2024,
+          "35k"
+        ]
+      ],
+      "facts": [
+        {
+          "t": "who",
+          "pyr": 2024,
+          "code": "35k",
+          "name": "Detroit Public Schools Community District",
+          "eq": 3000000
+        }
+      ]
+    },
+    {
+      "id": "35l",
+      "group": "named",
+      "cites": "Sec. 35l",
+      "letters": [
+        "35l"
+      ],
+      "name": "Lake Shore early childhood center",
+      "chart": "other",
+      "summary": "$1.25 million to Lake Shore Public Schools in Macomb County to help build an early childhood community center.",
+      "detail": [],
+      "troy": "Paid to Lake Shore.",
+      "years": [
+        {
+          "fy": 2024,
+          "amt": 1250000,
+          "doc": "PA2023-103",
+          "q": "$1,250,000.00 for 2023-2024 only to Lake Shore Public Schools to support the construction of an early childhood community center"
+        }
+      ],
+      "checks": [],
+      "pay": [
+        [
+          2024,
+          "35l"
+        ]
+      ],
+      "facts": [
+        {
+          "t": "who",
+          "pyr": 2024,
+          "code": "35l",
+          "name": "Lake Shore Public Schools (Macomb)",
+          "eq": 1250000
+        }
+      ]
+    },
+    {
+      "id": "35f",
+      "group": "named",
+      "cites": "Sec. 35f",
+      "letters": [
+        "35f"
+      ],
+      "name": "Chaldean Community Foundation",
+      "chart": "other",
+      "summary": "General-fund grants to the Chaldean Community Foundation to expand early childhood learning, improve early literacy, raise high school graduation rates for new Americans, and help with diplomas, skills training and postsecondary education.",
+      "detail": [
+        "In 2023-24 the money went to Macomb ISD in partnership with the foundation, from the school aid fund. The section was repealed in 2024 (2024 PA 120)."
+      ],
+      "troy": "Paid to one organization.",
+      "years": [
+        {
+          "fy": 2021,
+          "amt": 500000,
+          "doc": "PA2020-165",
+          "q": "$500,000.00 for the department to award to the Chaldean community foundation"
+        },
+        {
+          "fy": 2022,
+          "amt": 750000,
+          "doc": "PA2021-48",
+          "q": "$750,000.00 for the department to award to the Chaldean community foundation"
+        },
+        {
+          "fy": 2023,
+          "amt": 1000000,
+          "doc": "PA2022-144",
+          "q": "$1,000,000.00 for the department to award to the Chaldean Community Foundation"
+        },
+        {
+          "fy": 2024,
+          "amt": 1250000,
+          "doc": "PA2023-103",
+          "q": "$1,250,000.00 to Macomb Intermediate School District, in partnership with the Chaldean Community Foundation"
+        }
+      ],
+      "checks": [],
+      "pay": []
+    },
+    {
+      "id": "35e-bgc",
+      "group": "named",
+      "cites": "Sec. 35e",
+      "letters": [
+        "35e"
+      ],
+      "name": "Boys and Girls Clubs early literacy program",
+      "chart": "other",
+      "summary": "General-fund grants to an organization running after-school and summer programs in at least 25 communities (HFA: the Michigan Alliance of Boys and Girls Clubs) for an early literacy program for grades K-3.",
+      "detail": [
+        "At least 60% of participants had to qualify for free or reduced-price lunch."
+      ],
+      "troy": "Paid to one organization.",
+      "years": [
+        {
+          "fy": 2021,
+          "amt": 1000000,
+          "doc": "PA2020-165",
+          "q": "$1,000,000.00 for 2020-2021 for a grant to be distributed by the department to an organization to provide early literacy and academic support to at-need youth"
+        },
+        {
+          "fy": 2022,
+          "amt": 2000000,
+          "doc": "PA2021-48",
+          "q": "$2,000,000.00 for 2021-2022 for a grant to be distributed by the department to an organization to provide early literacy and academic support to at-need youth"
+        }
+      ],
+      "checks": [
+        {
+          "doc": "HFA21",
+          "q": "Provides a grant to the Michigan Alliance of Boys and Girls Clubs"
+        },
+        {
+          "doc": "PA2020-165",
+          "q": "At least 60% of the participants in the program must qualify for free or reduced-priced lunch"
+        },
+        {
+          "doc": "PA2020-165",
+          "q": "Provides after-school and summer programs in at least 25 communities statewide"
+        }
+      ],
+      "pay": []
+    },
+    {
+      "id": "35e-lib",
+      "group": "named",
+      "cites": "Sec. 35e",
+      "letters": [
+        "35e"
+      ],
+      "name": "School library study (Wayne State University)",
+      "chart": "other",
+      "summary": "$250,000 for Wayne State University to convene a committee to study Michigan's public school library programs.",
+      "detail": [
+        "The 2026-27 budget act repealed the section, effective July 21, 2026."
+      ],
+      "troy": "Paid to a university.",
+      "years": [
+        {
+          "fy": 2026,
+          "amt": 250000,
+          "doc": "HFA26",
+          "q": "Section 35e - School Libraries 250,000 Provides one-time funding to Wayne State University for a committee to study Michigan's public school library programs"
+        }
+      ],
+      "checks": [
+        {
+          "doc": "MCL35e",
+          "q": "Repealed 2026, Act 25, Imd. Eff. July 21, 2026"
+        }
+      ],
+      "pay": []
+    },
+    {
+      "id": "35g",
+      "group": "named",
+      "cites": "Sec. 35g",
+      "letters": [
+        "35g"
+      ],
+      "name": "Innovative community libraries",
+      "chart": "other",
+      "summary": "Competitive grants to districts that had set up an innovative community library, alone or with an existing library.",
+      "detail": [
+        "A qualifying library engages and connects readers, provides resources to build reading skills, and involves community volunteers and donations. The payment reports show 7 districts paid in 2021-22 and 10 in 2022-23, from $50,000 to $212,000."
+      ],
+      "troy": "Troy received none.",
+      "years": [
+        {
+          "fy": 2022,
+          "amt": 1000000,
+          "doc": "PA2021-48",
+          "q": "$1,000,000.00 for 2021-2022 for competitive grants to eligible districts that have established innovative community libraries"
+        },
+        {
+          "fy": 2023,
+          "amt": 1000000,
+          "doc": "PA2022-144",
+          "q": "$1,000,000.00 for 2022-2023 only for competitive grants to eligible districts that have established innovative community libraries"
+        }
+      ],
+      "checks": [
+        {
+          "doc": "PA2021-48",
+          "q": "The library provides for the involvement of community volunteers and donations"
+        },
+        {
+          "doc": "PA2021-48",
+          "q": "An eligible district may partner with an existing library"
+        }
+      ],
+      "pay": [
+        [
+          2022,
+          "35g"
+        ],
+        [
+          2023,
+          "35g"
+        ]
+      ],
+      "facts": [
+        {
+          "t": "n",
+          "pyr": 2022,
+          "code": "35g",
+          "block": "current",
+          "eq": 7
+        },
+        {
+          "t": "n",
+          "pyr": 2023,
+          "code": "35g",
+          "eq": 10
+        },
+        {
+          "t": "range",
+          "pyrs": [
+            2022,
+            2023
+          ],
+          "code": "35g",
+          "block": "current",
+          "min": 50000,
+          "max": 212000
+        },
+        {
+          "t": "troy",
+          "pyr": 2022,
+          "code": "35g",
+          "eq": 0
+        },
+        {
+          "t": "troy",
+          "pyr": 2023,
+          "code": "35g",
+          "eq": 0
+        }
+      ]
+    },
+    {
+      "id": "35h",
+      "group": "named",
+      "cites": "Sec. 35h",
+      "letters": [
+        "35h"
+      ],
+      "name": "Jewish Federation of Metro Detroit",
+      "chart": "other",
+      "summary": "General-fund grants to the Jewish Federation of Metro Detroit for day schools, day camps and summer programming \"to help mitigate the impact of remote learning on students' mental health and physical well-being.\"",
+      "detail": [],
+      "troy": "Paid to one organization.",
+      "years": [
+        {
+          "fy": 2022,
+          "amt": 1700000,
+          "doc": "PA2021-48",
+          "q": "$1,700,000.00 to the Jewish Federation of Metro Detroit"
+        },
+        {
+          "fy": 2023,
+          "amt": 500000,
+          "doc": "PA2022-144",
+          "q": "$500,000.00 to the Jewish Federation of Metro Detroit"
+        }
+      ],
+      "checks": [
+        {
+          "doc": "PA2021-48",
+          "q": "to help mitigate the impact of remote learning on students' mental health and physical well-being"
+        }
+      ],
+      "pay": []
+    },
+    {
+      "id": "35q",
+      "group": "nomoney",
+      "cites": "Sec. 35q",
+      "letters": [
+        "35q"
+      ],
+      "name": "Literacy dashboard",
+      "chart": "other",
+      "summary": "No money. By March 1, 2027, the department, with MiLEAP and the state's education data center (CEPI), must publish and keep updating a literacy achievement and opportunity dashboard.",
+      "detail": [
+        "It must show, among other things, the share of children with access to free, full-day pre-K, the share of pre-K-5 educators trained in the science of reading, the share of districts using a curriculum funded under Section 35m, and multiyear literacy results on state tests, including grade 3 M-STEP."
+      ],
+      "troy": "",
+      "years": [],
+      "checks": [
+        {
+          "doc": "PA2026-25",
+          "q": "By not later than March 1, 2027, the department, in collaboration with the department of lifelong education, advancement, and potential, and the center, shall publish"
+        },
+        {
+          "doc": "PA2026-25",
+          "q": "The percentage of pre-K to grade 5 educators in this state who are trained in the science of reading"
+        },
+        {
+          "doc": "PA2026-25",
+          "q": "The percentage of districts in this state using a curriculum funded under section 35m"
+        }
+      ],
+      "pay": []
+    }
+  ],
+  "troy_programs": [
+    "35a-time",
+    "35a-summer",
+    "35m"
+  ]
+}

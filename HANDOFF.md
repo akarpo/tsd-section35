@@ -1,7 +1,23 @@
 # Handoff: start here
 
-Last updated **2026-11-18**. The site is live and finished; nothing was left half-done. The local
-working copy was deleted after everything was pushed, so GitHub is the only copy.
+Last updated **2026-11-19**. The site is live and finished; nothing was left half-done.
+
+## 2026-11-19: the `/history` page
+
+Added `public/history.html` (<https://tsd-section35.karpowitsch.org/history>): every grant in
+Section 35 since it began in 2015–16, 27 grants in 12 budgets ($1.157 billion budgeted
+FY2016–FY2027), each with what it paid for, who could get it, budget by year, payments by year
+from the status reports (with recipients, Troy, Oakland Schools), and sources. Built by
+`python -I tools/build_history.py` from `sources/history/programs.json`; see `docs/FIGURES.md`
+("The history page") and `docs/FINDINGS.md` §8. Also fixed on the main page: **Troy's 2015–16
+35a(6) payment of $146,190 was missing** from "Every Section 35 dollar Troy received" (the first
+pass started at FY2017). The 404 page had a garbled sentence; rewritten.
+
+**Each year:** add the new budget act's Section 35 amounts to `programs.json` (quote + doc),
+add the new final status report's parsed CSV to `sources/parsed/` (`tools/parse_status_report.py`),
+map any new report codes in the grants' `pay` lists (the build names every unmapped line), and
+rebuild. `legislature.mi.gov` refuses connections after rapid requests; fetch one file at a time,
+or use the Wayback Machine (`https://web.archive.org/web/2026id_/<url>`).
 
 ## Pick up in five steps
 
@@ -11,12 +27,14 @@ working copy was deleted after everything was pushed, so GitHub is the only copy
    including what was searched for and not found).
 3. `pip install playwright pymupdf` if they're missing, then `python -I tools/qa.py` to render the
    page at 1280/390 px in light and dark mode (screenshots land in `qa-out/`, which is git-ignored).
-4. Edit `public/index.html` (add the `docs/FIGURES.md` row first for any new number). Chart and CSV
+4. Edit `public/index.html` (add the `docs/FIGURES.md` row first for any new number) or, for
+   `/history`, `sources/history/programs.json` and then `python -I tools/build_history.py`. Chart and CSV
    data come only from `python -I tools/build_data.py`, which re-checks the parsed CSVs against the
    PDF pages and fails on any mismatch. Run `python -I tools/qa.py` again and look at the screenshots.
 5. Commit and push to `main`. Cloudflare Pages deploys in about a minute. Confirm with
    `python -I tools/cloudflare.py status` (needs `CF_CRED_FILE`, see below) and
-   `python -I tools/qa.py --live --links`.
+   `python -I tools/qa.py --live --links`. `qa.py` covers both pages, at 1280, 390 and 360 px, and
+   fails on any on-screen text under 12.5 px.
 
 ## What the site says (as of 2026-11-18)
 
@@ -57,6 +75,10 @@ working copy was deleted after everything was pushed, so GitHub is the only copy
   vs. MDE's 434 and 420.
 - **From the research pass, not re-checked by hand:** the 35m and 35d appropriation history and HB
   5081 (`docs/FINDINGS.md` says so). Re-check before putting any of it on the page.
+- **`/history` uses the main page's share card.** A history-specific card would need a new file
+  name (see the share-card pitfall below).
+- **Not fetched:** 2019 PA 162 and 2025 PA 15 (FY2020 and FY2026 figures come from HFA's line-item
+  summaries instead, which record the vetoes and supplementals).
 - **Not done, only offered:** a link between this site and the sibling site
   <https://tsd-mpsers.karpowitsch.org> (repo `akarpo/mpsers`).
 

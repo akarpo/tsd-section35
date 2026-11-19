@@ -60,6 +60,7 @@ is in the HFA line-item summaries listed in section 7.
 
 | State FY | Section | Amount | Report page |
 |---|---|---|---|
+| FY2016 | 35a(6) | $146,190.00 | ALL1611 p. 1028 (added 11/19) |
 | FY2017 | 35a(5) | $135,630.00 | ALL1711 p. 1127 |
 | FY2018 | 35a(5) | $183,750.00 | ALL1811 p. 1129 |
 | FY2019 | 35a(5) | $181,460.14 | ALL1911 p. 1135 |
@@ -73,7 +74,8 @@ is in the HFA line-item summaries listed in section 7.
 | FY2027 to 11/20/2026 | none | $0 | ISD63 Nov-2026 pp. 32–33 |
 
 Totals [CALC]: 35a(5) FY2019–FY2025 $1,205,156.25; all Section 35 receipts FY2017–FY2026
-$2,671,094.09.
+$2,671,094.09; FY2016–FY2026 $2,817,284.09 (the FY2016 line was missed in the first pass, which
+started at FY2017; 35a began in FY2016).
 
 ## 4. 35j in Oakland County
 
@@ -145,3 +147,38 @@ Crescent Academy, Four Corners Montessori, Kingsbury Country Day, Keys Grace Aca
 - NCES via Urban Institute: `https://educationdata.urban.org/api/v1/school-districts/ccd/enrollment/2022/grade-{pk,k,1..5}/?leaid=2634260&race=99&sex=99`
 - HB 5081: https://www.legislature.mi.gov/Bills/Bill?ObjectName=2025-HB-5081
 - Troy board documents: https://tsd-boarddocs.karpowitsch.org (PDFs at https://media.karpowitsch.org/troysd-boarddocs/)
+
+## 8. Every Section 35 grant, FY2016–FY2027 (added 2026-11-19)
+
+The `/history` page and `sources/history/programs.json`. Research notes:
+
+- **No Section 35 existed in the FY2012–FY2015 acts** (2011 PA 62, 2012 PA 201, 2013 PA 60,
+  2014 PA 196 searched for "Sec. 35"). Sec. 35 and 35a were added by 2015 PA 85 (FY2016); MCL
+  388.1635a's history line confirms "Add. 2015, Act 85". Sec. 35 (implementation money and the
+  NAEP goal) was repealed by 2018 PA 265, which moved the goal into 35a(1).
+- **Letters are reused.** 35d: FY2020 social-emotional learning pilot (vetoed), FY2021–FY2025
+  Orton-Gillingham/dyslexia training (repealed by 2025 PA 15), FY2027 dyslexia teacher training
+  (new). 35e: FY2021–FY2022 Boys and Girls Clubs; FY2026 Wayne State school library study
+  (repealed by 2026 PA 25, imd. eff. July 21, 2026). 35a's subsections are renumbered often (the
+  coaches were 35a(5), then (4), now (2)).
+- **Supplementals and vetoes that changed amounts:** 2016 PA 249 (June 2016) cut FY2016 35a and
+  dropped the parent pilots; 2018 PA 586 (Dec. 2018) added $1.0M for the smallest ISD (Literacy
+  Essentials), raised MEC to $3.0M and redirected 35b to the Children's Choice Initiative; the
+  governor's Sept. 30, 2019 vetoes and 2019 PA 162 (Dec. 2019) set FY2020 (HFA FY20 summary).
+  Searched the Sec. 35 text of every later act for amendments to a prior year's amount: none.
+- **HFA discrepancy:** HFA's FY2015-16 line-item summary says "$3.5 million for teacher coaches";
+  2015 PA 85 says $3,000,000.00 and the SAF total ($23.9M) only adds up with $3.0M. The page uses
+  the act.
+- **Paid outside state aid** (so not in the payment reports): Michigan Education Corps, 35b,
+  35d, 35e, 35f, 35h, the summer-slide grant, the certification test, LETRS before FY2026, and
+  Literacy Essentials in FY2019–FY2020 (paid to no one in the reports; how it was paid is not
+  documented here).
+- **35m payments vs. MDE's count:** MDE says 561 districts were funded for 2024-25; the Aug. 20,
+  2026 final report shows 468 districts/ISDs paid on 2024-25 awards ($79,879,422.12). The rest may
+  be paid later; not checked.
+- **35j:** the payment reports show 416 entities in FY2024 and 401 in FY2025 (MDE: 434 and 420), net
+  FY2024 $67,780,747 after $1,995,428 taken back in later reports.
+- **Retrieval:** legislature.mi.gov started refusing connections after ~40 requests in a few
+  minutes (11/19). 2015 PA 85, 2016 PA 249, 2017 PA 108, 2019 PA 58 and 2026 PA 25 came from the
+  Wayback Machine (`web.archive.org/web/2026id_/<url>`); 2019 PA 162 and 2025 PA 15 returned 403
+  there. HFA documents (house.mi.gov) were always reachable. Fetch one file at a time.
