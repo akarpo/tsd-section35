@@ -101,6 +101,43 @@ their source text.
 | "Only the literacy coaches have been funded every year"; "most lasted one or two budgets" (17 of 27 with ≤ 2 years) | count | `programs.json` |
 | FY2016 Section 35a cut from $23.9M SAF to $19.0M SAF in June 2016; parent pilots ($1.0M) dropped; added time $17.5M → $13.6M | quote | 2015 PA 85 pp. 37–39; 2016 PA 249 pp. 43–45 |
 | FY2016 coaches $3.0M (HFA's FY2015-16 summary says $3.5M; the act says $3,000,000.00 and the SAF total only adds up with $3.0M) | quote | 2015 PA 85 p. 39; 2016 PA 249 p. 44 |
-| FY2020 amounts (coaches $31.5M, summer reading $5.0M restored, MEC and principals' training vetoed, 35c restored, 35d SEL pilot vetoed) | HFA | HFA FY2019-20 line-item summary pp. 15–16 (post-enrollment notes). 2019 PA 58 is a scanned image and 2019 PA 162 was not retrievable (legislature.mi.gov refused; Wayback 403) |
+| FY2020 amounts (coaches $31.5M, summer reading $5.0M restored, MEC and principals' training vetoed, 35c restored, 35d SEL pilot vetoed) | HFA | HFA FY2019-20 line-item summary pp. 15–16 (post-enrollment notes). 2019 PA 58 is a scanned image. 2019 PA 162 was refused on 11/19 morning and fetched later that day; its Sec. 35a pages are `sources/statute/acts/2019-PA-0162-pp11-13-Sec35a.pdf` (35a(9) text, p. 13) |
 | FY2026 amounts (35a $52.0M = coaches $42.0M + LETRS $10.0M; 35e $250K; 35m $70.0M incl. $4.0M essentials and $1.6M MiMTSS) | HFA | HFA FY2025-26 line-item summary p. 14 (2025 PA 15 not retrievable the same way) |
 | 35d paid first-come, first-served | statute | the clause is in Sec. 35d of 2020 PA 165, 2021 PA 48, 2022 PA 144, 2023 PA 103, 2024 PA 120 and 2026 PA 25 (checked by hand 11/19) |
+
+## What each grant paid for, and Troy's board records (added 2026-11-19)
+
+The three grant articles in `#troy` (`#grant-35a5`, `#grant-35a9`, `#grant-35m`). Every quotation in them was matched by script against the files below (the only one not matched by text is the 2018 flowchart title, which is in an image and was read from the rendered page). Board documents are cited at their `media.karpowitsch.org/troysd-boarddocs/` URLs; copies of the pages used are in `sources/troy/`. Meeting quotes come from the speaker-attributed transcripts in the tsd-boarddocs D1 table `transcript_utts`; excerpts with offsets are in `sources/troy/transcripts/`. The transcript spells 35m "35M"/"$35M" and UFLI "uFly"; the page quotes them as "[35m]" and "[UFLI]".
+
+| Figure | Value | Source |
+|---|---|---|
+| Troy's 35a(6)/35a(5) total, FY2016–FY2025 | $1,670,726.25 (shown $1,670,726) | sum of the ten 35a rows above; with 35a(9) $25,629.84 and 35m $1,120,928 it equals the $2,817,284.09 total |
+| 35a(5) purpose, "before, during, and after regular school hours…" | quote | 2024 PA 120 Sec. 35a(5), p. 59 |
+| Grades: K–3 (2015 PA 85 to 2018 PA 586), pre-K–3 in 2020 PA 165, pre-K–5 from 2023 PA 103 | statute | acts in `sources/statute/acts/` (2019 PA 58 is a scan, so "by 2020–21") |
+| MTSS quotes "a core curriculum and classroom interventions available to all pupils", "targeted group interventions", "intense individual interventions" | quote | 2015 PA 85 Sec. 35a(6)(a)(i)(C), p. 39 |
+| "the 5 fundamental building blocks of reading…"; "in diagnostic data interpretation" | quote | every act from 2015 PA 85 to 2024 PA 120 |
+| Read by Grade Three condition (MCL 380.1280f) from 2017–18 | statute | first in 2017 PA 108; absent from 2015 PA 85 and 2016 PA 249 (checked by script 11/19) |
+| $165 per first grader (FY2016); $210 (FY2018) | quote | 2015 PA 85 p. 39; HFA FY2017-18 line-item summary |
+| Sept. 1 report on pupils, schools and grades served | quote | 2024 PA 120 Sec. 35a(6), pp. 59–60 |
+| "Early Literacy – State funds supporting early literacy development." | quote | Troy proposed 2019–20 budget, "Fiscal Year 2019-20 Grants", June 11, 2019 packet p. 39 (`sources/troy/2019-06-11_FY2019-20_Budget_Grants-p39.pdf`) |
+| "Elementary Literacy Multi-Tiered System of Support"; "Attacking the Gaps" list (Targeted Supplemental Support, LLI, Reading Recovery, tutoring, Summer Success Academy) | quote | Oct. 16, 2018 packet pp. 225–226 (text layer) |
+| "PA 306 Implementation Flowchart"; 2017–18 calendar: screening three times a year, grade-level data meetings, IRIPs, progress checks every 2–4 weeks | read from image | Oct. 16, 2018 packet p. 228 (image only, no text layer) |
+| Grade-level teams (classroom teachers, special education, ELD teacher, literacy specialist, principal) meet "3X per year" to "collaboratively create" IRIPs; daily K–1 phonics new in 2019–20 | quote | Oct. 15, 2019 packet pp. 118, 121 (p. 118 team list read from the slide image) |
+| "maximize grant funds to ensure that we are effectively and equitably assigning intervention (literacy, math and ELD) supports"; literacy specialists "in flux" | quote | Jan. 13, 2026 "Board Budget Planning" slides 3–4 (`sources/troy/2026-01-13_Board_Budget_Planning.pptx`) |
+| 35a(9) purpose quote; "prioritize"; "if the program has capacity"; apply by Jan. 15, 2020; awards by March 15, 2020; split by 2019 grade 3 M-STEP ELA below-proficient counts | quote | 2019 PA 162 Sec. 35a(9), p. 13 |
+| 35a(9) paid to 556 districts and ISDs | count | parsed `s35_FY2020.csv` (fact checked by `build_history.py`) |
+| Sept. 1, 2020 workshop agenda item "Summer Learning"; no attachment | | minutes `sources/troy/2020-09-01_Workshop_Minutes_M090120BdWkshp.doc`; archive search for 2020-08-25..2020-09-20 found only PPE documents |
+| 35m: $87M "for the purposes described in this section…"; committee "likelihood to increase student literacy outcomes"; base award and per-pupil award; higher-ranked items get more; reports March 31 and Aug. 1; work project to Sept. 30, 2028 | quote | 2024 PA 120 Sec. 35m, pp. 63–64 |
+| "Districts will apply for funding for one literacy item from one of the ranking lists."; UFLI Foundations rank 7 (shared), Collaborative Literacy, 3rd Edition rank 8 (last) | quote | MDE handout in the Apr. 28, 2026 packet (`sources/troy/2026-04-28_Section_35m_Ranking_Tier_1_Materials_and_Series.pdf`) |
+| June 3, 2025: MTSS TA Center director says MDE released the three 35m lists "yesterday" | transcript | 2025-06-03 [158] 1:02:51, video XM0MoYkdd9g; speaker introduced by the superintendent at [7] |
+| "about a year and a half process" after MDE's January 2026 list | transcript | 2025-06-03 [174], [178] (superintendent) |
+| "at the start of the year, we indicated our interest…"; "[UFLI] is very inexpensive… more than $1 million allocation… closer to $10,000" | transcript | 2026-04-28 [130] 1:01:32, video 4r7_NtwEzLE (Director of Teaching & Learning, presenting) |
+| "use our [35m] allocation to buy Collaborative Literacy Being a Reader… use that full allocation" | transcript | 2026-04-28 [132] 1:02:08 |
+| "So we amended our grant application, and it was approved." | transcript | 2026-04-28 [140] 1:03:33 |
+| About 70 K–5 teachers in the 2026–27 pilots; recommendation in April 2027; "high-quality materials aligned to structured literacy" by 2027–28 | transcript | 2026-04-28 [158] 1:04:53, [169] 1:06:25 |
+| Current curriculum "is not on the state-approved list" | transcript | 2026-04-28 [80] 0:14:27 (superintendent) |
+| "a leadership cohort that will be going to the administrative strand of LETRS training" | transcript | 2026-04-28 [98] 0:32:53 |
+| 14 curriculum vendors; visits to Novi, Birmingham, South Lyon, West Bloomfield; Collaborative Literacy 96%, UFLI 88% | slides | "K-8 Literacy Curriculum Review Update", Apr. 28, 2026 (`sources/troy/2026-04-28_BOE_Literacy_Pilots_Update.pdf`); [118] calls the percentages the team's vote |
+| May 19, 2026 consent agenda item "K-8 Literacy Pilot Purchase", 7–0, moved Haupt, supported Alic | minutes | `sources/troy/2026-05-19_Minutes_M051926BdMtg.docx` (approved June 16, 2026); `2026-05-19_Consent_Resolution.doc`; video bsD_fLjzByY 0:30:02 |
+| $1,093,710 from 35m; $63,939.09 general funds = $36,304.59 + $5,000 + $22,634.50 (middle school); UFLI K–2 about $2,000 + $8,000, below the approval threshold, no fund named | quote | May 13, 2026 memo; Center for the Collaborative Classroom quote Q734881, Mar. 19, 2026 |
+

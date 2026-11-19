@@ -37,6 +37,12 @@
       "label": "2018 PA 586",
       "url": "https://legislature.mi.gov/documents/2017-2018/publicact/pdf/2018-PA-0586.pdf"
     },
+    "PA2019-162": {
+      "file": "sources/statute/acts/2019-PA-0162-pp11-13-Sec35a.pdf",
+      "first": 11,
+      "label": "2019 PA 162",
+      "url": "https://legislature.mi.gov/documents/2019-2020/publicact/pdf/2019-PA-0162.pdf"
+    },
     "PA2020-165": {
       "file": "sources/statute/acts/2020-PA-0165-pp47-51-Sec35.pdf",
       "first": 47,
@@ -289,7 +295,7 @@
         "Districts could add instructional time \"before, during, and after regular school hours or as part of a year-round balanced school calendar\" for pupils in grades K-3 identified by department-approved screening and diagnostic tools (pre-K to 3 by 2020-21, and pre-K to 5 from 2023-24). To qualify, a district had to show it ran a multi-tiered system of supports, used approved diagnostic tools, taught the five building blocks of reading (phonics, phonemic awareness, fluency, vocabulary, and comprehension), and had trained its K-3 teachers to read the diagnostic data.",
         "The money was divided by each qualifying district's full-time-equivalent first graders; HFA put the 2017-18 rate at $210 per first grader. From 2017-18 a district could spend up to 5% of its grant on teacher training and up to 5% on screening tools, which replaced the separate grants for those. The first year's amount was cut from $17.5 million to $13.6 million in June 2016. The 2025-26 budget ended the grant: \"Eliminates $19.9 million SAF.\""
       ],
-      "troy": "Troy received it every year from 2015-16 through 2024-25, $135,630 to $183,750 a year.",
+      "troy": "Troy received it every year from 2015-16 through 2024-25, $135,630 to $183,750 a year. Its board records describe the screening and tiered reading help the grant required but don't say what the money itself paid for; the main page has the details.",
       "years": [
         {
           "fy": 2016,
@@ -618,7 +624,7 @@
         "Enrollment was voluntary and first-come, first-served, opened first to pre-K, kindergarten and first-grade teachers, then grades 2 and 3, and from 2022-23 to other elementary teachers and some special-education staff. MDE delivers LETRS (Language Essentials for Teachers of Reading and Spelling) with Lexia Learning and reports having started training more than 12,000 educators.",
         "In 2025-26 the $10 million was paid to Gogebic-Ontonagon ISD. For 2026-27 it rises to $75 million, $50 million of it from the educator fellowship public provider fund, for an ISD chosen by the department."
       ],
-      "troy": "Training, not money for districts. These records don't show whether Troy teachers took part.",
+      "troy": "Training, not money for districts. In April 2026 Troy's Director of Teaching & Learning told the board that a district leadership cohort would take the administrative strand of LETRS training.",
       "years": [
         {
           "fy": 2022,
@@ -979,11 +985,12 @@
       ],
       "name": "Summer school reading program",
       "chart": "other",
-      "summary": "A one-year summer reading program in 2019-20.",
+      "summary": "A one-year summer school reading program in 2019-20 for third graders who scored below proficient on the M-STEP.",
       "detail": [
+        "The money was for \"a summer school reading program for grade 3 pupils who did not score at least proficient on the English language arts portion\" of the M-STEP \"and for pupils in grades K to 2 who are not reading at grade level.\" Districts applied by Jan. 15, 2020, and each one's share of the $5 million was proportional to its number of pupils below proficient on the 2019 grade 3 M-STEP English language arts test. Programs had to put those third graders first.",
         "The Legislature passed $15 million; the governor vetoed it, and a December 2019 supplemental (2019 PA 162) restored $5 million. The payment report shows it split among 556 districts and ISDs."
       ],
-      "troy": "Troy received $25,630.",
+      "troy": "Troy received $25,630. No Troy board document we found mentions the grant or what it paid for.",
       "years": [
         {
           "fy": 2020,
@@ -997,7 +1004,24 @@
           "note": "$15 million passed, vetoed, $5 million restored (2019 PA 162)."
         }
       ],
-      "checks": [],
+      "checks": [
+        {
+          "doc": "PA2019-162",
+          "q": "$5,000,000.00 for a summer school reading program for grade 3 pupils who did not score at least proficient on the English language arts portion of the Michigan student test of educational progress (M-STEP) and for pupils in grades K to 2 who are not reading at grade level"
+        },
+        {
+          "doc": "PA2019-162",
+          "q": "by not later than January 15, 2020"
+        },
+        {
+          "doc": "PA2019-162",
+          "q": "must prioritize its summer school reading program toward grade 3 pupils who scored less than proficient"
+        },
+        {
+          "doc": "PA2019-162",
+          "q": "multiplied by the number of pupils in the eligible district determined by the department to have scored less than proficient on the English language arts portion of the 2019 grade 3 Michigan student test of educational progress (M-STEP)"
+        }
+      ],
       "pay": [
         [
           2020,
@@ -1523,10 +1547,10 @@
       "chart": "35m",
       "summary": "Money for districts to buy reading curriculum, interventions or teacher training chosen from lists ranked by the state's Committee for Literacy Achievement.",
       "detail": [
-        "The committee grades literacy series, professional development and tools by their likelihood of raising pupils' reading outcomes. Districts apply for one item from the lists, and the department pays what it determines a district needs to put that item in place. MDE reports 561 districts applied for and received 2024-25 money, which was paid in 2025-26.",
+        "The committee grades literacy series, professional development and tools by their likelihood of raising pupils' reading outcomes. Districts apply for one item from the lists. Under the 2024-25 law the award was a base amount \"necessary\" to put that item in place plus a per-pupil amount, both larger for higher-ranked items; the 2026-27 law pays what the department determines a district needs. MDE reports 561 districts applied for and received 2024-25 money, which was paid in 2025-26.",
         "The 2025-26 line ($70 million) also carried $4 million for Literacy Essentials and $1.6 million for the MiMTSS Technical Assistance Center (paid to Clinton County RESA). For 2026-27 it is $50 million, with applications in December 2026."
       ],
-      "troy": "Troy received $1,120,928 on its 2024-25 award (UFLI Foundations), paid in 2025-26. Its 2025-26 award of $1,173,876 was still unpaid on Nov. 20, 2026.",
+      "troy": "Troy received $1,120,928 on its 2024-25 award, paid in 2025-26. MDE's lists record UFLI Foundations; in April 2026 the district told its board it had amended its application to buy Collaborative Literacy: Being a Reader, and in May 2026 the board approved spending $1,093,710 of the 35m money on it. Its 2025-26 award of $1,173,876 was still unpaid on Nov. 20, 2026. The main page tells the story.",
       "years": [
         {
           "fy": 2025,
@@ -1564,6 +1588,18 @@
         {
           "doc": "PA2026-25",
           "q": "The committee shall assign grade tiers to the series based on the series' likelihood to increase student literacy outcomes"
+        },
+        {
+          "doc": "PA2024-120",
+          "q": "A base award equal to the amount necessary for the district or intermediate district to implement the chosen early literacy series or other item"
+        },
+        {
+          "doc": "PA2024-120",
+          "q": "A per-pupil award based on the number of pupils in membership at the district and intermediate district"
+        },
+        {
+          "doc": "PA2024-120",
+          "q": "Districts and intermediate districts using higher-ranked literacy tools that are proven to increase student outcomes shall receive more funding"
         }
       ],
       "pay": [

@@ -1,6 +1,6 @@
 # Handoff: start here
 
-Last updated **2026-11-19**. The site is live and finished; nothing was left half-done.
+Last updated **2026-11-19** (twice). The site is live and finished; nothing was left half-done.
 
 ## 2026-11-19: the `/history` page
 
@@ -18,6 +18,31 @@ add the new final status report's parsed CSV to `sources/parsed/` (`tools/parse_
 map any new report codes in the grants' `pay` lists (the build names every unmapped line), and
 rebuild. `legislature.mi.gov` refuses connections after rapid requests; fetch one file at a time,
 or use the Wayback Machine (`https://web.archive.org/web/2026id_/<url>`).
+
+## 2026-11-19 (later): what each of Troy's grants paid for
+
+The main page's `#troy` section now has one article per grant Troy received money from
+(`#grant-35a5` extra reading time, `#grant-35a9` summer reading, `#grant-35m` literacy materials):
+what the law paid for, how a district qualified and how much, and **what Troy's board records show**,
+with links to each board document and to the moment in each meeting video. Findings:
+- **35m** is fully documented, from the June 2025 PA 146 overview to the May 19, 2026 purchase. The
+  district amended its 35m application from UFLI to Collaborative Literacy: Being a Reader (Apr. 28,
+  2026 workshop). That answers most of the old "did Troy change its selection?" question.
+- **35a(5)** has no record of what it paid for; the page shows the literacy MTSS the grant required,
+  from Troy's Oct. 2018 and Oct. 2019 third-grade reading presentations, and says so plainly.
+- **35a(9)** has no board record at all beyond a "Summer Learning" agenda item in Sept. 2020.
+- `/history`: 35a(9) now quotes 2019 PA 162 (new source doc `PA2019-162`); the 35m description has the
+  2024-25 two-part award; the Troy lines for 35a, 35a(9), 35m and LETRS were updated.
+- Fixed on both pages: the hero had no side gutter (`.hero{padding:56px 0 40px}` overrode `.wrap`).
+
+**How the board records were searched:** the tsd-boarddocs D1 database (FTS table `chunks`, and
+`transcript_utts` for meeting transcripts), queried with
+`npx wrangler d1 execute tsd-boarddocs --remote --json --command "..."` from `~/Downloads/tsd-boarddocs`.
+Every query, including the ones that found nothing, is listed in `docs/FINDINGS.md` §6. Board
+documents are linked at `media.karpowitsch.org/troysd-boarddocs/...`; copies of the pages used are in
+`sources/troy/`, and transcript excerpts with offsets are in `sources/troy/transcripts/`. The
+transcripts are machine-made: check the speaker against context before quoting (the public-comment
+speakers on 2025-06-03 are attributed to the chair), and keep the "[35m]"/"[UFLI]" brackets.
 
 ## Pick up in five steps
 
@@ -68,17 +93,19 @@ or use the Wayback Machine (`https://web.archive.org/web/2026id_/<url>`).
 - **Did Troy apply for 35j?** Unanswered. A FOIA request to Troy or MDE for 35j application records
   would settle it. If the district answers, replace the "likely" verdict with what it says, with a
   link.
-- **35m product:** MDE's list records Troy's choice as UFLI Foundations; the May 13, 2026 memo spends
-  $1,093,710 of 35m on Collaborative Literacy: Being a Reader. Whether Troy amended its selection is
-  not known.
+- **35m product:** answered in part. At the Apr. 28, 2026 workshop the Director of Teaching &
+  Learning said "we amended our grant application, and it was approved" (video 1:03:33); the board
+  approved the $1,093,710 Being a Reader purchase 7-0 on May 19, 2026. **Still unknown:** which award
+  (2024-25 or 2025-26) was amended and whether the amount changed; MDE's lists record UFLI for both.
+  It is question 5 on the page.
 - **Unexplained:** the status reports show 416 (FY2024) and 402 (FY2025) entities with a 35j line,
   vs. MDE's 434 and 420.
 - **From the research pass, not re-checked by hand:** the 35m and 35d appropriation history and HB
   5081 (`docs/FINDINGS.md` says so). Re-check before putting any of it on the page.
 - **`/history` uses the main page's share card.** A history-specific card would need a new file
   name (see the share-card pitfall below).
-- **Not fetched:** 2019 PA 162 and 2025 PA 15 (FY2020 and FY2026 figures come from HFA's line-item
-  summaries instead, which record the vetoes and supplementals).
+- **Not fetched:** 2025 PA 15 (FY2026 figures come from HFA's line-item summary instead). 2019 PA 162
+  was fetched on 11/19 afternoon; its Sec. 35a pages are in `sources/statute/acts/`.
 - **Not done, only offered:** a link between this site and the sibling site
   <https://tsd-mpsers.karpowitsch.org> (repo `akarpo/mpsers`).
 

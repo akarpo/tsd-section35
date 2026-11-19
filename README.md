@@ -30,7 +30,7 @@ items, and the mistakes not to repeat.
 | `sources/statute/`, `sources/law/` | Sec. 35j (2023 PA 103), Sec. 35d (2026 PA 25), MCL texts, 2024 PA 146. |
 | `sources/mde/` | MDE's 35j memo, its report to the Legislature, 35m grantee lists, the 35d page, the Nov. 17, 2026 literacy bulletin, an archived 35j page. |
 | `sources/nces/` | NCES fall 2022 enrollment by grade (Troy, and all Michigan districts for the method check). |
-| `sources/troy/`, `sources/hfa/` | Troy board documents; House Fiscal Agency FY2025-26 summary. |
+| `sources/troy/`, `sources/hfa/` | Troy board documents (pages used on the site, 2018–2026) and `sources/troy/transcripts/` (excerpts of the speaker-attributed meeting transcripts quoted on the page, with video offsets); House Fiscal Agency summaries. |
 | `sources/history/programs.json` | Every Section 35 grant, FY2016–FY2027: amounts by year with a source quote for each, descriptions, which payment-report lines belong to it, and the payment facts the prose relies on. |
 | `sources/statute/acts/` | The Section 35 pages of every school aid budget act used (2015 PA 85 … 2026 PA 25), named with their PDF page numbers. |
 | `sources/statute/mcl/` | MCL 388.1635 through 388.1635q as of Nov. 2026 (history and repeal notes); 35a, d, j, m are in `sources/statute/`. |

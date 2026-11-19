@@ -111,7 +111,31 @@ Crescent Academy, Four Corners Montessori, Kingsbury Country Day, Keys Grace Aca
   student workbooks, classroom books, and ongoing professional learning. The entirty of this
   purchase will come from our 35m grant allocation." UFLI K-2 pilots: about $2,000 + $8,000.
   MDE's lists record Troy's 35m product as UFLI Foundations; MDE allowed one change within the same
-  category. Whether Troy amended is [NOT FOUND].
+  category. **Answered 2026-11-19 from the Apr. 28, 2026 workshop recording:** the Director of
+  Teaching & Learning said "So we amended our grant application, and it was approved" (1:03:33),
+  after explaining that UFLI cost "closer to $10,000" against "more than $1 million" (1:01:32).
+  Which award (2024-25 or 2025-26) was amended, and whether the amount changed, is [NOT FOUND].
+- The 35m story, as the main page tells it (`#grant-35m`): June 3, 2025 PA 146 overview (MDE had
+  released the 35m lists the day before); 2025 application naming UFLI; 2025-26 curriculum review
+  (14 vendors, four district visits, Collaborative Literacy 96% / UFLI 88%); Apr. 28, 2026
+  recommendation and amendment; May 19, 2026 consent-agenda approval 7-0 of the "K-8 Literacy Pilot
+  Purchase" ($1,093,710 from 35m). Sources and timestamps in `docs/FIGURES.md` (last table).
+- 35a(5) (2015-16 to 2024-25): **no board document says what it paid for.** It is General Fund
+  revenue, listed as "Early Literacy – State funds supporting early literacy development" in the
+  proposed 2019-20 budget (June 11, 2019 packet p. 39). Archive queries (D1 FTS over chunks and
+  transcripts, 2026-11-19): `35a`, `"35 a"`, `"sec 35"`, `"section 35"`, `"early literacy"`,
+  `"additional instructional time"`, `"added instructional time"`, `"literacy grant"`, every yearly
+  35a amount ($146,190 … $176,655; only $176,655 hits, in the Jan. 2026 amendment), `"reading
+  interventionist"`, Reading Recovery with funding words. What the records do show is the system
+  the grant required: the Oct. 2018 and Oct. 2019 third-grade reading presentations (MTSS, PA 306
+  flowchart, IRIP calendar, grade-level teams, "Attacking the Gaps" supports).
+- 35a(9) summer reading (2019-20): **no board document mentions it.** Queries: `"summer reading"`,
+  summer + reading/literacy for Dec. 2019 – Mar. 2021, the $25,630 / $25,629.84 amount. The Sept. 1,
+  2020 workshop had a "Summer Learning" item with no attachment. A Sept. 16, 2020 check of $24,000 to
+  vendor "THE READING AND WRI" (name truncated in the register), marked "SUMMER HOMEGROWN" (Nov. 17, 2020 check register) is
+  not tied to the grant by any record and is not on the page.
+- LETRS: Apr. 28, 2026, a Troy "leadership cohort … will be going to the administrative strand of
+  LETRS training" (0:32:53); the slides list "MDE • LETRS training cohort".
 - Apr. 28, 2026 "BOE Literacy Pilots Update"; June 3, 2025 "PA 146 Legislative Overview".
 - [NOT FOUND] Any mention of 35j. Archive queries: `35j`, `35 j`, `section 35j`, "Professional
   Development, Curriculum, and Supports", `NexSys`, `literacy grant`, `comprehensive literacy system`,
@@ -123,7 +147,7 @@ Crescent Academy, Four Corners Montessori, Kingsbury Country Day, Keys Grace Aca
 
 1. Did Troy apply for 35j (Jan 26 – Feb 23, 2024)? If not, who decided and why?
 2. Why is the 2025-26 35m award unpaid as of Nov. 20, 2026?
-3. Did Troy amend its 35m product selection from UFLI Foundations?
+3. Which 35m award did Troy amend (it did, per the Apr. 28, 2026 workshop), and did the amount change?
 4. Will Troy apply for 35d in spring 2027?
 5. Status-report vs. MDE recipient counts (416/402 vs. 434/420): unexplained.
 

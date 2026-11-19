@@ -86,7 +86,7 @@
   .iconbtn{background:none;border:1px solid var(--border-2);color:var(--ink-2);border-radius:8px;width:36px;height:32px;cursor:pointer;font-size:15px}
   @media(max-width:820px){ .nav .links a.link{display:none} .nav .links a.link.keep{display:inline} }
 
-  .hero{padding:56px 0 40px}
+  .hero{padding-top:56px;padding-bottom:40px}
   .hero h1{font-size:clamp(32px,5.6vw,54px);font-weight:800;margin:.35em 0 .3em;letter-spacing:-.02em;max-width:22ch}
   .hero .sub{font-size:clamp(17.5px,2.2vw,21px);color:var(--ink-2);max-width:58ch}
   .stamp{margin-top:14px;font-size:13.5px;color:var(--muted)}
@@ -156,6 +156,29 @@
   .two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
   @media(max-width:860px){.two{grid-template-columns:1fr}}
   ol.qs li,ul.cond li{margin:8px 0}
+
+  /* one article per grant Troy received */
+  .jump{display:flex;flex-wrap:wrap;gap:8px 10px;margin:26px 0 0;padding:0;list-style:none}
+  .jump a{display:inline-block;border:1px solid var(--border-2);border-radius:999px;padding:6px 13px;font-size:14px;font-weight:650;color:var(--ink-2);text-decoration:none;background:var(--surface)}
+  .jump a:hover{color:var(--ink);border-color:var(--ink-2)}
+  .grant{margin-top:30px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px 22px 18px;scroll-margin-top:70px}
+  .grant .tag{font:700 12.5px/1.3 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;letter-spacing:.06em;color:var(--accent)}
+  .grant h3{margin:4px 0 4px;font-size:21px}
+  .grant .gmeta{margin:0 0 4px;font-size:15px;color:var(--ink-2)}
+  .grant h4{margin:20px 0 4px;font-size:16.5px;line-height:1.3}
+  .grant p,.grant li{font-size:16px}
+  .grant .two > div > h4:first-child{margin-top:16px}
+  .grant blockquote{font-size:15.5px}
+  .grant .story{margin-top:22px;padding-top:4px;border-top:1px solid var(--border)}
+  ol.tl{list-style:none;margin:10px 0 0;padding:0;border-left:2px solid var(--border-2)}
+  ol.tl > li{position:relative;margin:0 0 16px;padding-left:18px}
+  ol.tl > li::before{content:"";position:absolute;left:-7px;top:7px;width:12px;height:12px;border-radius:50%;background:var(--surface);border:2px solid var(--brand-ink)}
+  ol.tl .when{display:block;font-weight:700;font-size:14.5px;color:var(--ink)}
+  .docs{margin:14px 0 0;padding:12px 16px;background:var(--surface-2);border-radius:10px}
+  .docs .h{font-weight:700;font-size:14px;margin-bottom:4px}
+  .docs ul{margin:0;padding-left:18px}
+  .docs li{font-size:14px;margin:4px 0}
+  @media(max-width:600px){ .grant{padding:18px 16px 14px} }
   .src li{margin:6px 0;font-size:14.5px}
 
   footer{border-top:1px solid var(--border);padding:34px 0 60px;color:var(--muted);font-size:13.5px}
@@ -273,7 +296,7 @@
 <section id="troy"><div class="wrap">
   <div class="eyebrow">Troy School District</div>
   <h2 class="sec">Every Section 35 dollar Troy received</h2>
-  <p class="lead prose">From 2015&ndash;16 through 2024&ndash;25, Troy's only regular Section 35 money was a small yearly grant for extra reading instruction, Section 35a(5) (35a(6) in its first year). The state ended that grant in 2025&ndash;26. Troy's one large award came from Section 35m, a literacy-materials grant, which it is using for new reading programs.</p>
+  <p class="lead prose">From 2015&ndash;16 through 2024&ndash;25, Troy's only regular Section 35 money was a small yearly grant for extra reading instruction, Section 35a(5) (35a(6) in its first year). The state ended that grant in 2025&ndash;26. Troy also got a one-year summer reading grant in 2019&ndash;20. Its one large payment came from Section 35m, a literacy-materials grant, which is paying for a new K&ndash;5 reading program. Below the table, each grant is explained: what the law paid for, how a district got it, and what Troy's board records show about the money.</p>
   <div class="tablewrap"><table class="fit">
     <thead><tr><th>State fiscal year</th><th class="l">Section</th><th>Amount</th></tr></thead>
     <tbody>
@@ -287,20 +310,129 @@
       <tr><td>2022&ndash;23</td><td class="l">35a(5)</td><td>$170,226</td></tr>
       <tr class="hl"><td>2023&ndash;24</td><td class="l">35a(5); <strong>35j: none</strong></td><td>$155,030; $0</td></tr>
       <tr class="hl"><td>2024&ndash;25</td><td class="l">35a(5); <strong>35j: none</strong></td><td>$176,655; $0</td></tr>
-      <tr><td>2025&ndash;26</td><td class="l">35m 2024&ndash;25 award (UFLI Foundations), paid as a prior-year adjustment; 35a(5) eliminated statewide</td><td>$1,120,928</td></tr>
-      <tr><td>2026&ndash;27 (to Nov. 20)</td><td class="l">35m 2025&ndash;26 award (UFLI Foundations): not yet paid</td><td>$1,173,876 awarded</td></tr>
+      <tr><td>2025&ndash;26</td><td class="l">35m 2024&ndash;25 award, paid as a prior-year adjustment; 35a(5) eliminated statewide</td><td>$1,120,928</td></tr>
+      <tr><td>2026&ndash;27 (to Nov. 20)</td><td class="l">35m 2025&ndash;26 award: not yet paid</td><td>$1,173,876 awarded</td></tr>
     </tbody></table></div>
   <p class="note">Sources: MDE State Aid Financial Status Reports for Troy School District (63150), final report each year and the Nov. 20, 2026 report; MDE Section 35m grantee lists for 2024&ndash;25 and 2025&ndash;26. Troy's January 2026 budget amendment removed the $176,655 it had budgeted from 35a(5) for 2025&ndash;26.</p>
+
+  <ul class="jump" aria-label="The three grants">
+    <li><a href="#grant-35a5">35a(5): extra reading time</a></li>
+    <li><a href="#grant-35a9">35a(9): summer reading</a></li>
+    <li><a href="#grant-35m">35m: literacy materials</a></li>
+  </ul>
+
+  <!-- ---------- 35a(5) ---------- -->
+  <article class="grant" id="grant-35a5">
+    <div class="tag">SECTION 35a(5), 35a(6) IN 2015&ndash;16</div>
+    <h3>Extra reading time for young pupils who screen as behind</h3>
+    <p class="gmeta">Troy received it for ten years, 2015&ndash;16 to 2024&ndash;25: <strong>$1,670,726</strong> in all. The state ended it in 2025&ndash;26.</p>
+    <div class="two">
+      <div>
+        <h4>What the law paid for</h4>
+        <p>The money went &ldquo;to districts that provide additional instructional time to those pupils in grades pre-K to 5 who have been identified by using department-approved screening and diagnostic tools as needing additional supports and interventions to read at grade level by the end of grade 3.&rdquo; The extra time could be given &ldquo;before, during, and after regular school hours or as part of a year-round balanced school calendar.&rdquo;</p>
+        <p>It covered grades K&ndash;3 at first, pre-K&ndash;3 by 2020&ndash;21 and pre-K&ndash;5 from 2023&ndash;24. From 2017&ndash;18 a district could spend up to 5% of it on teacher training and up to 5% on screening and diagnostic tests.</p>
+      </div>
+      <div>
+        <h4>How a district got it, and how much</h4>
+        <p>A district had to show MDE that it had done all of these:</p>
+        <ul class="cond">
+          <li>Run a multi-tiered system of supports: &ldquo;a core curriculum and classroom interventions available to all pupils&rdquo;, &ldquo;targeted group interventions&rdquo;, and &ldquo;intense individual interventions&rdquo;</li>
+          <li>Used department-approved diagnostic tools to find the pupils who needed the extra time</li>
+          <li>Taught reading through &ldquo;the 5 fundamental building blocks of reading: phonics, phonemic awareness, fluency, vocabulary, and comprehension&rdquo;</li>
+          <li>Trained its teachers &ldquo;in diagnostic data interpretation&rdquo;</li>
+          <li>From 2017&ndash;18, complied with Michigan's Read by Grade Three law (MCL 380.1280f)</li>
+        </ul>
+        <p>Every district that qualified got the same amount per first grader: $165 in the first year's law; the House Fiscal Agency put the 2017&ndash;18 rate at $210. By Sept. 1 each year, a district reported to MDE which pupils, schools and grades it served.</p>
+      </div>
+    </div>
+    <div class="story">
+      <h4>What Troy's records show</h4>
+      <p>The money went into Troy's General Fund, and no board document we found says what it paid for: no position, program or purchase is tied to it. Troy's proposed 2019&ndash;20 budget lists it among the General Fund grants in one line: &ldquo;Early Literacy &ndash; State funds supporting early literacy development.&rdquo;</p>
+      <p>What the records do show, in Troy's own presentations, is the system the grant required. In October 2018 Teaching &amp; Learning showed the board Troy's &ldquo;Elementary Literacy Multi-Tiered System of Support&rdquo;: a &ldquo;PA 306 Implementation Flowchart&rdquo; (PA 306 of 2016 is the Read by Grade Three law) and a 2017&ndash;18 calendar for screening every pupil three times a year, grade-level data meetings, Individual Reading Improvement Plans, and progress checks every two to four weeks. The same deck lists the elementary supports Troy used for &ldquo;Attacking the Gaps&rdquo;, among them &ldquo;Targeted Supplemental Support&rdquo;, &ldquo;LLI&rdquo;, &ldquo;Reading Recovery&rdquo;, tutoring and the &ldquo;Summer Success Academy.&rdquo; The October 2019 update showed grade-level teams (classroom teachers, special education, ELD teachers, literacy specialists and the principal) meeting three times a year to &ldquo;collaboratively create&rdquo; each pupil's Individual Reading Improvement Plan, and new daily phonics lessons in kindergarten and first grade.</p>
+      <p>Those are the grant's own conditions: screening, a tiered system of help, and Read by Grade Three plans. Troy had to have that system to qualify, so the records connect the grant to it, but not to any one thing the money bought.</p>
+      <p>When the state ended the grant, Troy's January 2026 budget amendment removed the &ldquo;35(A) &ndash; Early Literacy&rdquo; revenue of $176,655 it had budgeted for 2025&ndash;26. The same month, the district's budget-planning slides set a goal to &ldquo;maximize grant funds to ensure that we are effectively and equitably assigning intervention (literacy, math and ELD) supports,&rdquo; and listed literacy specialists among the staffing still &ldquo;in flux.&rdquo;</p>
+      <div class="docs"><div class="h">Documents</div><ul>
+        <li>Law: <a href="https://legislature.mi.gov/documents/2015-2016/publicact/pdf/2015-PA-0085.pdf">2015 PA 85</a>, Sec. 35a(6) (pp. 39&ndash;40); <a href="https://legislature.mi.gov/documents/2017-2018/publicact/pdf/2017-PA-0108.pdf">2017 PA 108</a>, Sec. 35a (Read by Grade Three condition added); <a href="https://legislature.mi.gov/documents/2023-2024/publicact/pdf/2024-PA-0120.pdf">2024 PA 120</a>, Sec. 35a(2), (3), (5), (6) (pp. 58&ndash;60)</li>
+        <li>Troy: <a href="https://media.karpowitsch.org/troysd-boarddocs/2019-01-01_2019%20Board%20Packets%20and%20Minutes/061119SpMtg.pdf#page=39">Proposed 2019&ndash;20 budget, &ldquo;Fiscal Year 2019-20 Grants&rdquo;</a> (June 11, 2019 packet, p. 39)</li>
+        <li>Troy: <a href="https://media.karpowitsch.org/troysd-boarddocs/2018-01-01_2018%20Board%20Packets%20and%20Minutes/101618RegMtg.pdf#page=225">&ldquo;Gap Analysis &amp; Third Grade Reading,&rdquo; Oct. 2, 2018 workshop</a> (Oct. 16, 2018 packet, from p. 193; the literacy MTSS is on pp. 225&ndash;229)</li>
+        <li>Troy: <a href="https://media.karpowitsch.org/troysd-boarddocs/2019-01-01_2019%20Board%20Packets%20and%20Minutes/101519RegMtg.pdf#page=112">&ldquo;Student Achievement Update: Third Grade Reading,&rdquo; Oct. 1, 2019</a> (Oct. 15, 2019 packet, pp. 112&ndash;121)</li>
+        <li>Troy: <a href="https://media.karpowitsch.org/troysd-boarddocs/2026-01-20_Organizational%20and%20Regular%20Meeting%20of%20the%20Board%20of%20Education%207_00%20PM/Budget%20Presentation%201-20-26.pdf">Jan. 20, 2026 budget amendment</a>; <a href="https://media.karpowitsch.org/troysd-boarddocs/2026-01-13_Board%20of%20Education%20Workshop%206_00%20P.M/Board%20Budget%20Planning.pptx">Jan. 13, 2026 budget-planning slides</a> (slides 3&ndash;4)</li>
+      </ul></div>
+    </div>
+  </article>
+
+  <!-- ---------- 35a(9) ---------- -->
+  <article class="grant" id="grant-35a9">
+    <div class="tag">SECTION 35a(9), 2019&ndash;20 ONLY</div>
+    <h3>A summer reading program for third graders who scored below proficient</h3>
+    <p class="gmeta">One year only. Troy received <strong>$25,630</strong>.</p>
+    <div class="two">
+      <div>
+        <h4>What the law paid for</h4>
+        <p>&ldquo;A summer school reading program for grade 3 pupils who did not score at least proficient on the English language arts portion of the Michigan student test of educational progress (M-STEP) and for pupils in grades K to 2 who are not reading at grade level.&rdquo; A district had to &ldquo;prioritize&rdquo; the third graders and could add K&ndash;2 pupils &ldquo;if the program has capacity.&rdquo;</p>
+        <p>The Legislature passed $15 million for it in the 2019&ndash;20 budget; the governor vetoed it, and a December 2019 supplemental (2019 PA 162) restored $5 million.</p>
+      </div>
+      <div>
+        <h4>How a district got it, and how much</h4>
+        <p>Districts had to apply by Jan. 15, 2020, and MDE was to make awards by March 15, 2020. The $5 million was split among the districts that applied, in proportion to how many of their pupils scored below proficient on the 2019 third-grade M-STEP English language arts test. The payment records show it went to 556 districts and ISDs.</p>
+      </div>
+    </div>
+    <div class="story">
+      <h4>What Troy's records show</h4>
+      <p>Troy applied and was paid $25,630, a share set by its count of third graders below proficient in 2019. The money was for 2019&ndash;20, so the program would have run in summer 2020, during the pandemic. The board heard a &ldquo;Summer Learning&rdquo; update at its Sept. 1, 2020 workshop, but no presentation was attached to that agenda, and no board document we found mentions this grant or what Troy's summer reading program did with it.</p>
+      <div class="docs"><div class="h">Documents</div><ul>
+        <li>Law: <a href="https://legislature.mi.gov/documents/2019-2020/publicact/pdf/2019-PA-0162.pdf">2019 PA 162</a>, Sec. 35a(9) (p. 13); House Fiscal Agency, <a href="https://www.house.mi.gov/hfa/PDF/LineItemSummaries/SchAid_lineFY20.pdf">FY2019&ndash;20 line-item summary</a> (veto and restoration, pp. 15&ndash;16)</li>
+        <li>Payment: MDE State Aid Financial Status Report, 2019&ndash;20 final (<a href="https://mdoe.state.mi.us/samspublic/Home/DownloadPDF?fileName=ALL2011.pdf&amp;report=statusarchive">ALL2011</a>, Troy p. 1130)</li>
+        <li>Troy: <a href="https://media.karpowitsch.org/troysd-boarddocs/2020-10-20_Regular%20Meeting%20of%20the%20Board%20of%20Education%207_00%20PM/M090120BdWkshp.doc">minutes of the Sept. 1, 2020 workshop</a> (agenda only)</li>
+      </ul></div>
+    </div>
+  </article>
+
+  <!-- ---------- 35m ---------- -->
+  <article class="grant" id="grant-35m">
+    <div class="tag">SECTION 35m, FROM 2024&ndash;25</div>
+    <h3>Literacy materials chosen from a state-ranked list</h3>
+    <p class="gmeta">Troy received <strong>$1,120,928</strong> on its 2024&ndash;25 award (paid in 2025&ndash;26). Its 2025&ndash;26 award of <strong>$1,173,876</strong> was still unpaid on Nov. 20, 2026.</p>
+    <div class="two">
+      <div>
+        <h4>What the law paid for</h4>
+        <p>The 2024&ndash;25 budget set aside $87 million, one time, &ldquo;for the purposes described in this section, including payments to improve educational outcomes in literacy.&rdquo; MDE's Committee for Literacy Achievement grades reading curricula, teacher training and other tools &ldquo;based on the series' likelihood to increase student literacy outcomes&rdquo; and keeps a ranked list. MDE's summary, handed to Troy's board: &ldquo;Districts will apply for funding for one literacy item from one of the ranking lists.&rdquo;</p>
+        <p>The line was $70 million in 2025&ndash;26 and is $50 million in 2026&ndash;27, with applications in December 2026.</p>
+      </div>
+      <div>
+        <h4>How a district got it, and how much</h4>
+        <p>A district applies and names its item. The award has two parts: &ldquo;a base award equal to the amount necessary for the district or intermediate district to implement the chosen early literacy series or other item,&rdquo; and &ldquo;a per-pupil award based on the number of pupils in membership&rdquo; of the district. Higher-ranked items earn more in both. A district must report the literacy materials it uses twice a year, and unspent 2024&ndash;25 money carries forward to Sept. 30, 2028.</p>
+        <p>On the list in Troy's April 2026 board packet, UFLI Foundations shares the seventh rank among Tier 1 curricula and Collaborative Literacy, 3rd Edition, is ranked eighth, the last.</p>
+      </div>
+    </div>
+    <div class="story">
+      <h4>What Troy's records show: from UFLI to Being a Reader</h4>
+      <p>This is the one grant where Troy's board records trace the money from the application to the purchase. It is paying for the first step of Troy's response to Michigan's literacy and dyslexia law (Public Act 146 of 2024): the district told the board that by the start of 2027&ndash;28 &ldquo;we need to ensure that we have high-quality materials aligned to structured literacy&rdquo; (<a href="https://www.youtube.com/watch?v=4r7_NtwEzLE&amp;t=3985s">video, 1:06:25</a>).</p>
+      <ol class="tl">
+        <li><span class="when">June 3, 2025: the board hears about 35m</span>At a board workshop on PA 146, the director of Michigan's MTSS Technical Assistance Center told the board that MDE had released the three 35m ranking lists the day before (<a href="https://www.youtube.com/watch?v=XM0MoYkdd9g&amp;t=3771s">video, 1:02:51</a>). The superintendent described a review of about a year and a half, starting when MDE published its approved curricula in January 2026.</li>
+        <li><span class="when">2025: Troy applies, naming UFLI</span>MDE's list of 2024&ndash;25 grantees records Troy's choice as &ldquo;UFLI Foundations, 1st Edition&rdquo; and its award as $1,120,928, which the state paid in 2025&ndash;26. Troy's Director of Teaching &amp; Learning later described that choice: &ldquo;at the start of the year, we indicated our interest in [35m] funds. We did not at that time have the voices of our teachers at the table&rdquo; &hellip; &ldquo;[UFLI] is very inexpensive &hellip; but we received a very large, you know, more than $1 million allocation. We were not able to spend that all. We were spending closer to $10,000.&rdquo; (<a href="https://www.youtube.com/watch?v=4r7_NtwEzLE&amp;t=3692s">video, 1:01:32</a>)</li>
+        <li><span class="when">2025&ndash;26: teachers pick a curriculum</span>Troy's current reading curriculum is not on the state's approved list, the superintendent told the board (<a href="https://www.youtube.com/watch?v=4r7_NtwEzLE&amp;t=867s">video, 0:14:27</a>). A review team of classroom teachers, literacy and ELD specialists, special education teachers and principals heard from 14 curriculum vendors and visited Novi, Birmingham, South Lyon and West Bloomfield. In its review, Collaborative Literacy drew 96% for the comprehensive K&ndash;5 curriculum and UFLI 88% for foundational skills.</li>
+        <li><span class="when">April 28, 2026: the application is amended</span>At a board workshop the Director of Teaching &amp; Learning recommended &ldquo;that the board allow us to use our [35m] allocation to buy Collaborative Literacy Being a Reader. We would actually be able to buy it at scale and to use that full allocation.&rdquo; Then: &ldquo;So we amended our grant application, and it was approved.&rdquo; (<a href="https://www.youtube.com/watch?v=4r7_NtwEzLE&amp;t=3813s">video, 1:03:33</a>) The plan: about 70 K&ndash;5 teachers pilot Collaborative Literacy and UFLI in 2026&ndash;27, with a recommendation to the board in April 2027.</li>
+        <li><span class="when">May 19, 2026: the board approves the purchase</span>The board approved the &ldquo;K-8 Literacy Pilot Purchase&rdquo; 7&ndash;0 on its consent agenda (moved by Mr. Haupt, supported by Mrs. Alic). The May 13 memo behind it spends <strong>$1,093,710</strong> of the 35m allocation on &ldquo;Collaborative Literacy: Being a Reader at scale for all elementary students,&rdquo; covering &ldquo;teacher materials, student workbooks, classroom books, and ongoing professional learning&rdquo; (a Center for the Collaborative Classroom quote dated March 19, 2026). The middle-school pilots ($63,939.09) come from general funds; the K&ndash;2 UFLI pilots (about $10,000) were below the board-approval threshold.</li>
+        <li><span class="when">Nov. 20, 2026: the second award is still unpaid</span>MDE recommended $1,173,876 for Troy for 2025&ndash;26, again recorded as &ldquo;UFLI Foundations, 1st Edition.&rdquo; On the state's Nov. 20, 2026 payment, other Oakland districts received theirs (Birmingham: $720,411), but Troy's report has no 35m line. MDE pays 35m after a district's budget in NexSys is approved, so the most likely explanation is a pending budget. We don't know, and the records don't say which award the April amendment changed.</li>
+      </ol>
+      <p class="note">Meeting quotes are from the board's video recordings (speaker-attributed machine transcripts, which spell 35m &ldquo;35M&rdquo; and UFLI &ldquo;uFly&rdquo;). Links go to the moment.</p>
+      <div class="docs"><div class="h">Documents</div><ul>
+        <li>Law: <a href="https://legislature.mi.gov/documents/2023-2024/publicact/pdf/2024-PA-0120.pdf">2024 PA 120</a>, Sec. 35m (pp. 63&ndash;64); <a href="https://legislature.mi.gov/documents/2025-2026/publicact/pdf/2026-PA-0025.pdf">2026 PA 25</a>, Sec. 35m</li>
+        <li>MDE: <a href="https://www.michigan.gov/mde/-/media/Project/Websites/mde/Links/2025/08/24-25-Section-35m-Grantees_Programs_Amounts.pdf">2024&ndash;25 grantees</a> (Troy p. 17); <a href="https://www.michigan.gov/mde/-/media/Project/Websites/mde/Literacy/Literacy-Grants/FY-26-Section-35m-Grantees.xlsx">2025&ndash;26 grantees</a></li>
+        <li>Troy, June 3, 2025 workshop: <a href="https://media.karpowitsch.org/troysd-boarddocs/2025-06-03_Board%20of%20Education%20Workshop%206_00%20P.M/PA%20146%20Legislative%20Overview.pdf">PA 146 Legislative Overview</a>; <a href="https://www.youtube.com/watch?v=XM0MoYkdd9g">video</a></li>
+        <li>Troy, April 28, 2026 workshop: <a href="https://media.karpowitsch.org/troysd-boarddocs/2026-04-28_Board%20of%20Education%20Workshop%206_00%20PM/BOE%20Literacy%20Pilots%20Update.pdf">K&ndash;8 Literacy Curriculum Review Update</a> (slides); <a href="https://media.karpowitsch.org/troysd-boarddocs/2026-04-28_Board%20of%20Education%20Workshop%206_00%20PM/Section_35m_Ranking_Tier_1_Materials_and_Series.pdf">MDE's 35m Tier 1 rankings handout</a>; <a href="https://media.karpowitsch.org/troysd-boarddocs/2026-04-28_Board%20of%20Education%20Workshop%206_00%20PM/Key%20Troy%20School%20District%20K.pdf">K&ndash;8 Reading Pilot Plan</a>; <a href="https://www.youtube.com/watch?v=4r7_NtwEzLE">video</a></li>
+        <li>Troy, May 19, 2026 meeting: <a href="https://media.karpowitsch.org/troysd-boarddocs/2026-05-19_Regular%20Meeting%20of%20the%20Board%20of%20Education%207_00%20PM/Ltr%20of%20Rec%20-%20Teaching%20%26%20Learning%20-%20K-8%20Literacy%20Pilots.pdf">K&ndash;8 literacy pilots memo, May 13, 2026</a>; <a href="https://media.karpowitsch.org/troysd-boarddocs/2026-05-19_Regular%20Meeting%20of%20the%20Board%20of%20Education%207_00%20PM/Final%20Collaborative%20Quote.pdf">Center for the Collaborative Classroom quote</a>; <a href="https://media.karpowitsch.org/troysd-boarddocs/2026-06-16_Regular%20Meeting%20of%20the%20Board%20of%20Education%207_00%20PM/M051926BdMtg.docx">minutes</a> (approved June 16, 2026); <a href="https://www.youtube.com/watch?v=bsD_fLjzByY&amp;t=1802s">video</a></li>
+      </ul></div>
+    </div>
+  </article>
+
   <div class="two">
     <div class="callout"><h3>Help that doesn't show up as Troy money</h3>
-      <p class="small" style="margin:0">Some Section 35 money reaches Troy's teachers through Oakland Schools or training vendors rather than as a payment to Troy: Oakland Schools received <strong>$3.0 million a year</strong> for early-literacy coaches (Section 35a(4)) in 2023&ndash;24 through 2025&ndash;26, and the state pays directly for LETRS reading training. Those aren't counted above.</p></div>
-    <div class="callout"><h3>Where the 35m money is going</h3>
-      <p class="small" style="margin:0">A May 13, 2026 memo from Troy's Director of Teaching &amp; Learning to the business office recommends buying &ldquo;Collaborative Literacy: Being a Reader at scale for all elementary students&rdquo; for <strong>$1,093,710</strong>, which &ldquo;will come from our 35m grant allocation,&rdquo; plus small UFLI pilots in K&ndash;2 (about $10,000). MDE's lists record Troy's 35m choice as &ldquo;UFLI Foundations, 1st Edition.&rdquo;</p></div>
+      <p class="small" style="margin:0">Some Section 35 money reaches Troy's teachers through Oakland Schools or training vendors rather than as a payment to Troy: Oakland Schools received <strong>$3.0 million a year</strong> for early-literacy coaches (Section 35a(4)) in 2023&ndash;24 through 2025&ndash;26, and the state pays directly for LETRS reading training. In April 2026 Troy's Director of Teaching &amp; Learning told the board about &ldquo;a leadership cohort that will be going to the administrative strand of LETRS training&rdquo; (<a href="https://www.youtube.com/watch?v=4r7_NtwEzLE&amp;t=1973s">video, 0:32:53</a>). None of that is counted above.</p></div>
+    <div class="callout"><h3>Every Section 35 grant since 2015&ndash;16</h3>
+      <p class="small" style="margin:0">Section 35 has held 27 different grants in 12 state budgets, from literacy coaches and dyslexia training to Section 35j and 35m. <a href="/history">See each one</a>: what it paid for, who got it, how much each year, and what Troy received.</p></div>
   </div>
-  <div class="callout"><h3>Every Section 35 grant since 2015&ndash;16</h3>
-    <p class="small" style="margin:0">Section 35 has held 27 different grants in 12 state budgets, from literacy coaches and dyslexia training to Section 35j and 35m. <a href="/history">See each one</a>: what it paid for, who got it, how much each year, and what Troy received.</p></div>
-  <div class="callout"><h3>Troy's 2025&ndash;26 35m award is still unpaid</h3>
-    <p class="small" style="margin:0">MDE recommended <strong>$1,173,876</strong> for Troy in 2025&ndash;26. On the state's Nov. 20, 2026 payment, other Oakland districts received theirs (Birmingham: $720,411), but Troy's report has no 35m line. MDE pays 35m after a district's budget in NexSys is approved, so the most likely explanation is a pending budget. We don't know.</p></div>
 </div></section>
 
 <!-- ============ ORTON-GILLINGHAM ============ -->
@@ -337,7 +469,7 @@
     <li><strong>If Troy did apply,</strong> why do the state's payment records show no 35j money for 2023&ndash;24 or 2024&ndash;25?</li>
     <li><strong>Which conditions were the obstacle,</strong> if any: the screening and needs assessment, the plan, training for 100% of pre-K&ndash;5 teachers, or posting the curriculum and benchmark assessment?</li>
     <li><strong>Why hasn't Troy's 2025&ndash;26 35m award ($1,173,876) been paid,</strong> when other Oakland districts' awards were paid on Nov. 20, 2026? Is the NexSys budget still pending?</li>
-    <li><strong>Did Troy change its 35m selection?</strong> MDE records &ldquo;UFLI Foundations&rdquo;; the May 2026 memo plans to spend $1,093,710 of the 35m allocation on &ldquo;Collaborative Literacy: Being a Reader.&rdquo;</li>
+    <li><strong>Which 35m award did Troy amend, and what will the other one buy?</strong> The district told the board on April 28, 2026 that it had amended its 35m application to buy Collaborative Literacy: Being a Reader ($1,093,710), and that the change was approved. MDE's lists record UFLI Foundations for both the 2024&ndash;25 award ($1,120,928, paid) and the 2025&ndash;26 award ($1,173,876, unpaid). Did the change alter the amount of either award? <a href="#grant-35m">The 35m story.</a></li>
     <li><strong>Will Troy apply for the $1 million Section 35d grant</strong> as soon as it opens in spring 2027, given that it is first-come, first-served?</li>
     <li><strong>How is Troy preparing for universal dyslexia screening</strong> of every K&ndash;3 pupil from the 2027&ndash;28 school year?</li>
   </ol>
