@@ -115,6 +115,13 @@ Crescent Academy, Four Corners Montessori, Kingsbury Country Day, Keys Grace Aca
   Teaching & Learning said "So we amended our grant application, and it was approved" (1:03:33),
   after explaining that UFLI cost "closer to $10,000" against "more than $1 million" (1:01:32).
   Which award (2024-25 or 2025-26) was amended, and whether the amount changed, is [NOT FOUND].
+  The Apr. 28, 2026 workshop minutes (`M042826BdWkshp`, approved May 19) list "K-8 Reading Adoption
+  Plan" with no detail, so the recording is the only record of the amendment. Attribution check
+  (close-out, 11/19): the transcript gives both quotes (1:01:32, 1:03:33) to the presenter, who
+  introduced the item and signed the May 13 memo; frames at 1:01:35 and 1:03:35 show the same man in
+  a gray suit with a staff badge on the speaker camera (no legible name plate). The page names him by
+  title only. Video offsets match the transcript: YouTube durations 11,912 / 14,656 / 4,853 s vs. D1
+  11,913 / 14,656 / 4,853 s, and the YouTube chapters start where the transcript items do.
 - The 35m story, as the main page tells it (`#grant-35m`): June 3, 2025 PA 146 overview (MDE had
   released the 35m lists the day before); 2025 application naming UFLI; 2025-26 curriculum review
   (14 vendors, four district visits, Collaborative Literacy 96% / UFLI 88%); Apr. 28, 2026
@@ -205,4 +212,6 @@ The `/history` page and `sources/history/programs.json`. Research notes:
 - **Retrieval:** legislature.mi.gov started refusing connections after ~40 requests in a few
   minutes (11/19). 2015 PA 85, 2016 PA 249, 2017 PA 108, 2019 PA 58 and 2026 PA 25 came from the
   Wayback Machine (`web.archive.org/web/2026id_/<url>`); 2019 PA 162 and 2025 PA 15 returned 403
-  there. HFA documents (house.mi.gov) were always reachable. Fetch one file at a time.
+  there. HFA documents (house.mi.gov) were always reachable. Fetch one file at a time. Later on 11/19
+  a single direct request for 2019 PA 162 succeeded (HTTP 200, 19 pages, text layer); 2025 PA 15 was
+  not retried.

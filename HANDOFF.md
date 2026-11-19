@@ -61,7 +61,7 @@ speakers on 2025-06-03 are attributed to the chair), and keep the "[35m]"/"[UFLI
    `python -I tools/qa.py --live --links`. `qa.py` covers both pages, at 1280, 390 and 360 px, and
    fails on any on-screen text under 12.5 px.
 
-## What the site says (as of 2026-11-18)
+## What the site says (as of 2026-11-19)
 
 - **35j, confirmed:** Troy received **$0** of Section 35j, the one-time $140M literacy grant
   (2023 PA 103), paid at $311.08 per pre-K–5 pupil to districts that applied between Jan. 26 and
@@ -78,6 +78,12 @@ speakers on 2025-06-03 are attributed to the chair), and keep the "[35m]"/"[UFLI
 - **Troy's other Section 35 money:** 35a(5) of about $155–184K a year ended in FY2026; 35m paid
   $1,120,928 (2024-25 award). The **2025-26 35m award of $1,173,876 was unpaid in the Nov. 20, 2026
   status report**, when Birmingham's ($720,411) and other Oakland districts' were paid.
+- **What each grant paid for (`#grant-35a5`, `#grant-35a9`, `#grant-35m`):** the law, eligibility and
+  amounts, and Troy's board records. 35m: application naming UFLI, then amended to Collaborative
+  Literacy: Being a Reader (Apr. 28, 2026 workshop recording; the minutes list the item only), and
+  the $1,093,710 purchase approved 7-0 on May 19, 2026. 35a(5) and 35a(9): no record of what the
+  money bought, and the page says so; 35a(5) is connected to the literacy MTSS the grant required.
+  Staff and officials are named by title only, as elsewhere on the page.
 - **35d, the $1M Orton-Gillingham grant:** $1,000,000 statewide for 2026-27 (2026 PA 25), first-come,
   first-served, applications in NexSys in spring 2027 (MDE's Nov. 17, 2026 literacy bulletin). **No
   press release** with "$1M for Orton-Gillingham" was found; if one turns up, compare it and cite it.
